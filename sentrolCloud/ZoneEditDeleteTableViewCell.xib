@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ZoneEditDeleteTableViewCell" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" id="8W9-iu-puG" customClass="ZoneEditDeleteTableViewCell" customModule="sentrolCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="8W9-iu-puG" id="yvu-en-zKy">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sectionBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="rgT-PD-ZBb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJA-gu-KS3">
+                        <rect key="frame" x="66" y="11" width="239" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.27755935469999998" green="0.43616470029999999" blue="0.43616470029999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jyg-p3-oNz">
+                        <rect key="frame" x="10" y="0.0" width="44" height="44"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEB-cg-b57">
+                        <rect key="frame" x="228" y="1" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="Yf7-k5-5no"/>
+                            <constraint firstAttribute="height" constant="44" id="daC-VA-cUq"/>
+                        </constraints>
+                        <state key="normal" image="zone_section_editIcon.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="editSectionName:" destination="8W9-iu-puG" eventType="touchUpInside" id="Wlo-pb-QyV"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYc-XR-mfM">
+                        <rect key="frame" x="272" y="1" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="Cpy-Nl-Xgd"/>
+                            <constraint firstAttribute="height" constant="44" id="WhD-V9-JBL"/>
+                        </constraints>
+                        <state key="normal" image="zone_section_deleteIcon.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="deleteSectionName:" destination="8W9-iu-puG" eventType="touchUpInside" id="wG8-QT-EbF"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="HYc-XR-mfM" secondAttribute="trailing" constant="4" id="1BC-CJ-QgG"/>
+                    <constraint firstItem="HYc-XR-mfM" firstAttribute="leading" secondItem="LEB-cg-b57" secondAttribute="trailing" id="Je8-mq-Iaa"/>
+                    <constraint firstAttribute="bottom" secondItem="rgT-PD-ZBb" secondAttribute="bottom" id="OA3-rq-wGi"/>
+                    <constraint firstItem="rgT-PD-ZBb" firstAttribute="top" secondItem="yvu-en-zKy" secondAttribute="top" id="ap4-xf-1cT"/>
+                    <constraint firstAttribute="trailing" secondItem="rgT-PD-ZBb" secondAttribute="trailing" id="ibt-cQ-8tp"/>
+                    <constraint firstItem="rgT-PD-ZBb" firstAttribute="leading" secondItem="yvu-en-zKy" secondAttribute="leading" id="kuN-Lc-DD5"/>
+                    <constraint firstItem="LEB-cg-b57" firstAttribute="top" secondItem="yvu-en-zKy" secondAttribute="top" constant="1" id="shZ-hP-a19"/>
+                    <constraint firstItem="HYc-XR-mfM" firstAttribute="top" secondItem="yvu-en-zKy" secondAttribute="top" constant="1" id="zlr-9I-n3k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headerLabel" destination="MJA-gu-KS3" id="0Uf-l4-KY5"/>
+                <outlet property="icon" destination="Jyg-p3-oNz" id="3Z1-My-Ic8"/>
+            </connections>
+            <point key="canvasLocation" x="299" y="361"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sectionBg.png" width="1" height="44"/>
+        <image name="zone_section_deleteIcon.png" width="44" height="44"/>
+        <image name="zone_section_editIcon.png" width="44" height="44"/>
+    </resources>
+</document>

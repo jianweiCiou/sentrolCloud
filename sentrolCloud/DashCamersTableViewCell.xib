@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="DashCamersTableViewCell" selectionStyle="default" indentationWidth="10" rowHeight="66" id="scb-x5-eI5" customClass="DashCamersTableViewCell" customModule="sentrolCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="213"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="scb-x5-eI5" id="rvP-WW-X46">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b7l-lk-E5J">
+                        <rect key="frame" x="8" y="11" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="HJc-cG-Sgt"/>
+                            <constraint firstAttribute="height" constant="44" id="OVY-dE-ZLV"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="11K-zc-xwX">
+                        <rect key="frame" x="0.0" y="66" width="320" height="1"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsB-P5-mja">
+                        <rect key="frame" x="60" y="11" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="EG0-ng-T0C"/>
+                            <constraint firstAttribute="height" constant="21" id="ocM-PK-kEz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Jn-L0-LfT">
+                        <rect key="frame" x="60" y="34" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="RZx-h6-KJj"/>
+                            <constraint firstAttribute="height" constant="21" id="Yxb-Zj-qDE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comeraView.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pD7-eN-npK">
+                        <rect key="frame" x="0.0" y="66" width="320" height="147"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PsB-P5-mja" firstAttribute="leading" secondItem="b7l-lk-E5J" secondAttribute="trailing" constant="8" id="4ry-Uv-0Zz"/>
+                    <constraint firstItem="5Jn-L0-LfT" firstAttribute="top" secondItem="PsB-P5-mja" secondAttribute="bottom" constant="2" id="5Dy-dA-9Rr"/>
+                    <constraint firstItem="b7l-lk-E5J" firstAttribute="top" secondItem="rvP-WW-X46" secondAttribute="top" constant="11" id="cYM-t9-wSM"/>
+                    <constraint firstItem="5Jn-L0-LfT" firstAttribute="leading" secondItem="b7l-lk-E5J" secondAttribute="trailing" constant="8" id="eXu-ru-g4D"/>
+                    <constraint firstItem="b7l-lk-E5J" firstAttribute="leading" secondItem="rvP-WW-X46" secondAttribute="leading" constant="8" id="f9j-Jb-uQN"/>
+                    <constraint firstItem="PsB-P5-mja" firstAttribute="top" secondItem="rvP-WW-X46" secondAttribute="top" constant="11" id="oWH-yB-AlX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="icon" destination="b7l-lk-E5J" id="ppx-5P-aPG"/>
+                <outlet property="name" destination="5Jn-L0-LfT" id="phg-XM-ZQr"/>
+                <outlet property="type" destination="PsB-P5-mja" id="ybn-yH-UDS"/>
+            </connections>
+            <point key="canvasLocation" x="255" y="247.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="comeraView.jpg" width="591" height="271"/>
+    </resources>
+</document>

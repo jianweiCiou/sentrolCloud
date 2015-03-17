@@ -1,0 +1,108 @@
+/* Class = "IBUIButton"; normalTitle = "PANIC"; ObjectID = "0eM-cb-wSm"; */
+"0eM-cb-wSm.normalTitle" = "保全";
+
+/* Class = "IBUILabel"; text = "Sucked"; ObjectID = "0lJ-9P-r8h"; */
+"0lJ-9P-r8h.text" = "Sucked";
+
+/* Class = "IBUIButton"; normalTitle = "join us"; ObjectID = "2CF-n8-Egt"; */
+"2CF-n8-Egt.normalTitle" = "加入我們";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "4SL-S4-DB6"; */
+"4SL-S4-DB6.normalTitle" = "Button";
+
+/* Class = "IBUIButton"; normalTitle = "Sing in"; ObjectID = "9K8-FP-1ic"; */
+"9K8-FP-1ic.normalTitle" = "登入";
+
+/* Class = "IBUINavigationItem"; title = "Message"; ObjectID = "9u2-xW-KSJ"; */
+"9u2-xW-KSJ.title" = "訊息";
+
+/* Class = "IBUINavigationItem"; title = "Feedback"; ObjectID = "9up-LY-TX2"; */
+"9up-LY-TX2.title" = "意見回饋";
+
+/* Class = "IBUITextField"; placeholder = "email"; ObjectID = "CFv-Qz-2ll"; */
+"CFv-Qz-2ll.placeholder" = "電子郵件";
+
+/* Class = "IBUIButton"; normalTitle = "zone"; ObjectID = "FLJ-Th-tIM"; */
+"FLJ-Th-tIM.normalTitle" = "區域";
+
+/* Class = "IBUILabel"; text = "Product"; ObjectID = "HFn-sP-EWI"; */
+"HFn-sP-EWI.text" = "產品";
+
+/* Class = "IBUIButton"; normalTitle = "mode"; ObjectID = "JP8-3g-yO9"; */
+"JP8-3g-yO9.normalTitle" = "模式";
+
+/* Class = "IBUINavigationItem"; title = "Term and Policy"; ObjectID = "LIV-fd-vCo"; */
+"LIV-fd-vCo.title" = "相關條款";
+
+/* Class = "IBUITextView"; text = "Terms you agree to when you use Sentrolckoud"; ObjectID = "MHY-mX-9Vr"; */
+"MHY-mX-9Vr.text" = "Terms you agree to when you use Sentrolckoud";
+
+/* Class = "IBUIButton"; normalTitle = "AWAY"; ObjectID = "Msu-2p-6zt"; */
+"Msu-2p-6zt.normalTitle" = "離家";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "O8i-0h-Vth"; */
+"O8i-0h-Vth.normalTitle" = "Button";
+
+/* Class = "IBUITextView"; text = "Community Standars"; ObjectID = "ToU-Xz-Vb0"; */
+"ToU-Xz-Vb0.text" = "Community Standars";
+
+/* Class = "IBUINavigationItem"; title = "Log Out"; ObjectID = "Xs1-14-BAz"; */
+"Xs1-14-BAz.title" = "登出";
+
+/* Class = "IBUIButton"; normalTitle = "HOME"; ObjectID = "Xsa-5Z-Gdw"; */
+"Xsa-5Z-Gdw.normalTitle" = "家中";
+
+/* Class = "IBUITextView"; text = "Data Use Policy"; ObjectID = "XxO-ld-J4U"; */
+"XxO-ld-J4U.text" = "數據使用政策";
+
+/* Class = "IBUINavigationItem"; title = "Notification"; ObjectID = "YfJ-QT-HvH"; */
+"YfJ-QT-HvH.title" = "通知";
+
+/* Class = "IBUINavigationItem"; title = "Dashboard"; ObjectID = "ZQ3-Zo-vlr"; */
+"ZQ3-Zo-vlr.title" = "控制台";
+
+/* Class = "IBUINavigationItem"; title = "General"; ObjectID = "eQg-M0-CfS"; */
+"eQg-M0-CfS.title" = "帳號設定";
+
+/* Class = "IBUILabel"; text = "Power by Nietzsche Enterprise"; ObjectID = "gp3-Wv-Kq4"; */
+"gp3-Wv-Kq4.text" = "Power by Nietzsche Enterprise";
+
+/* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "isf-kw-gQ7"; */
+"isf-kw-gQ7.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "IBUITextView"; text = "Terms you agree to when you use Sentrolckoud"; ObjectID = "kW7-cm-yno"; */
+"kW7-cm-yno.text" = "Terms you agree to when you use Sentrolckoud";
+
+/* Class = "IBUINavigationItem"; title = "Event"; ObjectID = "lLB-DW-Sow"; */
+"lLB-DW-Sow.title" = "事件";
+
+/* Class = "IBUINavigationItem"; title = "Account"; ObjectID = "nBL-kX-kPq"; */
+"nBL-kX-kPq.title" = "帳號";
+
+/* Class = "IBUITextView"; text = "Terms you agree to when you use Sentrolckoud"; ObjectID = "pQH-lG-DtV"; */
+"pQH-lG-DtV.text" = "Terms you agree to when you use Sentrolckoud";
+
+/* Class = "IBUILabel"; text = "Are you sure you want to log-out"; ObjectID = "pY4-qV-YRC"; */
+"pY4-qV-YRC.text" = "確定登出？";
+
+/* Class = "IBUILabel"; text = "Your Feedback About Sentrolcloud on iOS"; ObjectID = "r36-BN-Rbg"; */
+"r36-BN-Rbg.text" = "您對於 Sentrolcloud 的評價";
+
+/* Class = "IBUINavigationItem"; title = "Setting"; ObjectID = "rHw-AY-4B7"; */
+"rHw-AY-4B7.title" = "設定";
+
+/* Class = "IBUITextView"; text = "Statement of Right & Responsibilities"; ObjectID = "sVG-CV-WeD"; */
+"sVG-CV-WeD.text" = "Statement of Right & Responsibilities";
+
+/* Class = "IBUITextField"; placeholder = "password"; ObjectID = "v3a-lc-9Z6"; */
+"v3a-lc-9Z6.placeholder" = "密碼";
+
+/* Class = "IBUILabel"; text = "Best"; ObjectID = "wO0-2C-7uG"; */
+"wO0-2C-7uG.text" = "Best";
+
+/* Class = "IBUIButton"; normalTitle = "NIGHT"; ObjectID = "zPq-Jt-xDh"; */
+"zPq-Jt-xDh.normalTitle" = "夜間";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "zeL-dq-dqZ"; */
+"zeL-dq-dqZ.normalTitle" = "Button";
+

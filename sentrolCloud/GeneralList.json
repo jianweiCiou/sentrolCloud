@@ -1,0 +1,25 @@
+{"GeneralListArray": [
+                   { "type": "Administractor",
+                      "firstName": "Johnson",
+                      "middleName": "",
+                      "LastName": "Chang",
+                      "AccountEmail": "johnson@nhr.com.tw",
+                      "BackupEmail": "service@nhr.com.tw"
+                      },
+                      { "type": "User1",
+                      "firstName": "Amy",
+                      "middleName": "",
+                      "LastName": "Lin",
+                      "AccountEmail": "johnson@nhr.com.tw",
+                      "BackupEmail": "service@nhr.com.tw"
+                      },
+                      { "type": "User2",
+                      "firstName": "Susan",
+                      "middleName": "",
+                      "LastName": "Su",
+                      "AccountEmail": "johnson@nhr.com.tw",
+                      "BackupEmail": "service@nhr.com.tw"
+                      }
+                   
+                   ]
+}

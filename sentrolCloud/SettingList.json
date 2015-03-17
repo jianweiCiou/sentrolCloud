@@ -1,0 +1,184 @@
+{"SettingListArray": [
+                        {
+                        "className": "Add Zone",
+                        "classImage": "",
+                      "gatewayList": ""
+                      },{
+                      "className": "AAA-房間",
+                      "classImage": "Bed_Room",
+                      "gatewayList": [{
+                                      "type": "Humidity",
+                                      "name": "AAA-室內濕度偵測",
+                                      "status": "off",
+                                      "away":0,
+                                      "night":0,
+                                      "home":0
+                                      },
+                                      {
+                                      "type": "Lamp",
+                                      "name": "AAA-大燈調整",
+                                      "status": "on",
+                                      "away":0,
+                                      "night":0,
+                                      "home":1
+                                      },{
+                                      "type": "Humidity",
+                                      "name": "AAA-窗外濕度",
+                                      "status": "on",
+                                      "away":0,
+                                      "night":0,
+                                      "home":0
+                                      },
+                                      {
+                                      "type": "Lamp",
+                                      "name": "AAA-檯燈調整",
+                                      "status": "on",
+                                      "away":0,
+                                      "night":0,
+                                      "home":1
+                                      }
+                                      ]
+                      },{
+                      "className": "BBB-客廳",
+                      "classImage": "Living_Room",
+                      "gatewayList": [{
+                                      "type": "Humidity",
+                                      "name": "BBB-客廳濕度",
+                                      "status": "on",
+                                      "away":0,
+                                      "night":0,
+                                      "home":0
+                                      },
+                                      {
+                                      "type": "Temperature",
+                                      "name": "BBB-溫度偵測",
+                                      "status": "on",
+                                      "away":0,
+                                      "night":0,
+                                      "home":1
+                                      },{
+                                      "type": "Humidity",
+                                      "name": "BBB-15D4G",
+                                      "status": "on",
+                                      "away":0,
+                                      "night":0,
+                                      "home":0
+                                      },
+                                      {
+                                      "type": "Lamp",
+                                      "name": "BBB-152DJ",
+                                      "status": "on",
+                                      "away":0,
+                                      "night":0,
+                                      "home":1
+                                      }
+                                      ]
+                      },{
+                      "className": "CCC-二樓房間",
+                      "classImage": "Bed_Room",
+                      "gatewayList": [{
+                                      "type": "Humidity",
+                                      "name": "CCC-15D4G",
+                                      "status": "off",
+                                      "away":0,
+                                      "night":0,
+                                      "home":0
+                                      },
+                                      {
+                                      "type": "Lamp",
+                                      "name": "CCC-152DJ",
+                                      "status": "on",
+                                      "away":0,
+                                      "night":0,
+                                      "home":1
+                                      },{
+                                      "type": "Humidity",
+                                      "name": "CCC-15D4G",
+                                      "status": "on",
+                                      "away":0,
+                                      "night":0,
+                                      "home":0
+                                      },
+                                      {
+                                      "type": "Lamp",
+                                      "name": "CCC-152DJ",
+                                      "status": "on",
+                                      "away":0,
+                                      "night":0,
+                                      "home":1
+                                      }
+                                      ]
+                      },{
+                      "className": "DDD-三樓客廳",
+                      "classImage": "Living_Room",
+                      "gatewayList": [{
+                                      "type": "Humidity",
+                                      "name": "DDD-15D4G",
+                                      "status": "on",
+                                      "away":0,
+                                      "night":0,
+                                      "home":0
+                                      },
+                                      {
+                                      "type": "Lamp",
+                                      "name": "DDD-152DJ",
+                                      "status": "off",
+                                      "away":0,
+                                      "night":0,
+                                      "home":1
+                                      }
+                                      ]
+                      },{
+                        "className": "Undefiend",
+                        "classImage": "",
+                        "gatewayList": [{
+                                        "type": "Curtain",
+                                        "name": "EEE-152DJ",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Humidity",
+                                        "name": "EEE-15D4G",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Lamp",
+                                        "name": "EEE-152DJ",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":1,
+                                        "home":0
+                                        },{
+                                        "type": "Curtain",
+                                        "name": "EEE-152DJ",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Humidity",
+                                        "name": "EEE-15D4G",
+                                        "status": "off",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Lamp",
+                                        "name": "EEE-152DJ",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":1,
+                                        "home":0
+                                        }
+                                        ]
+                        }
+                        ]
+}

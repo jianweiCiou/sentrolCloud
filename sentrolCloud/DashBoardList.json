@@ -1,0 +1,221 @@
+{"DachBoardListArray": [
+                        {
+                        "className": "臥室",
+                        "classImage": "Bed_Room",
+                        "gatewayList": [{
+                                        "type": "Door",
+                                        "name": "152DJ",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Glass",
+                                        "name": "15D4G",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Motion",
+                                        "name": "152DJ",
+                                        "status": "off",
+                                        "away":0,
+                                        "night":1,
+                                        "home":0
+                                        },
+                                        {
+                                        "type": "Gas",
+                                        "name": "15D4G",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":1,
+                                        "home":0
+                                        },{
+                                        "type": "Camera",
+                                        "name": "152DJ",
+                                        "status": "on",
+                                        "away":1,
+                                        "night":1,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Humidity",
+                                        "name": "15D4G",
+                                        "status": "14",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Smoke",
+                                        "name": "15D4G",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":0,
+                                        "home":0
+                                        },
+                                        {
+                                        "type": "Motion2",
+                                        "name": "152DJ",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Siren",
+                                        "name": "15D4G",
+                                        "status": "off",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "CO2",
+                                        "name": "15D4G",
+                                        "status": "off",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Temperature",
+                                        "name": "15D4G",
+                                        "status": "23",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        }]
+                        },{
+                        "className": "二樓臥室",
+                        "classImage": "Bed_Room",
+                        "gatewayList": [{
+                                        "type": "Curtain",
+                                        "name": "152DJ",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Humidity",
+                                        "name": "15D4G",
+                                        "status": "21",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Lamp",
+                                        "name": "152DJ",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":1,
+                                        "home":0
+                                        },
+                                        {
+                                        "type": "Temperature",
+                                        "name": "15D4G",
+                                        "status": "21",
+                                        "away":0,
+                                        "night":1,
+                                        "home":0
+                                        },{
+                                        "type": "Curtain",
+                                        "name": "152DJ",
+                                        "status": "on",
+                                        "away":1,
+                                        "night":1,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Camera",
+                                        "name": "15D4G",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":0,
+                                        "home":0
+                                        },
+                                        {
+                                        "type": "Lamp",
+                                        "name": "152DJ",
+                                        "status": "off",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        }]
+                        },
+                        {
+                        "className": "一樓客廳",
+                        "classImage": "Living_Room",
+                        "gatewayList": [{
+                                        "type": "Curtain",
+                                        "name": "152DJ",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Humidity",
+                                        "name": "15D4G",
+                                        "status": "29",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Lamp",
+                                        "name": "152DJ",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":1,
+                                        "home":0
+                                        },
+                                        {
+                                        "type": "Temperature",
+                                        "name": "15D4G",
+                                        "status": "19",
+                                        "away":0,
+                                        "night":1,
+                                        "home":0
+                                        },{
+                                        "type": "Curtain",
+                                        "name": "152DJ",
+                                        "status": "on",
+                                        "away":1,
+                                        "night":1,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Camera",
+                                        "name": "15D4G",
+                                        "status": "off",
+                                        "away":0,
+                                        "night":0,
+                                        "home":0
+                                        },
+                                        {
+                                        "type": "Lamp",
+                                        "name": "152DJ",
+                                        "status": "on",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        },
+                                        {
+                                        "type": "Temperature",
+                                        "name": "15D4G",
+                                        "status": "15",
+                                        "away":0,
+                                        "night":0,
+                                        "home":1
+                                        }]
+                        }]
+}
+
+
+

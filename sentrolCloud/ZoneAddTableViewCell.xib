@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ZoneAddTableViewCell" selectionStyle="none" indentationWidth="10" rowHeight="66" id="ROE-D4-W8B" customClass="ZoneAddTableViewCell" customModule="sentrolCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ROE-D4-W8B" id="BER-7i-Q0u">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Limited by 12 letters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyc-hV-J65">
+                        <rect key="frame" x="67" y="37" width="135" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.79215686269999996" green="0.79215686269999996" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add New Zone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sBo-oB-Myk">
+                        <rect key="frame" x="61" y="7" width="190" height="30"/>
+                        <color key="backgroundColor" red="0.79215686269999996" green="0.79215686269999996" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="0YB-Va-Eus"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWd-B5-1AI">
+                        <rect key="frame" x="10" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="EYD-UN-h2k"/>
+                            <constraint firstAttribute="height" constant="44" id="hZn-Mq-VcE"/>
+                        </constraints>
+                        <state key="normal" image="cameraIcon.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="openAlbum:" destination="ROE-D4-W8B" eventType="touchUpInside" id="gG9-cm-dil"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGg-mp-CMc">
+                        <rect key="frame" x="269" y="13" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="Ysc-0P-hk6"/>
+                            <constraint firstAttribute="height" constant="38" id="tgG-O8-csh"/>
+                        </constraints>
+                        <state key="normal" image="saveIcon.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="saveClassification:" destination="ROE-D4-W8B" eventType="touchUpInside" id="M4J-YI-16W"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JGg-mp-CMc" firstAttribute="top" secondItem="BER-7i-Q0u" secondAttribute="top" constant="13" id="5Kj-i1-Hhe"/>
+                    <constraint firstItem="JGg-mp-CMc" firstAttribute="leading" secondItem="sBo-oB-Myk" secondAttribute="trailing" constant="18" id="8J5-sd-5rI"/>
+                    <constraint firstItem="sWd-B5-1AI" firstAttribute="leading" secondItem="BER-7i-Q0u" secondAttribute="leading" constant="10" id="Eub-e0-6gJ"/>
+                    <constraint firstItem="sWd-B5-1AI" firstAttribute="top" secondItem="BER-7i-Q0u" secondAttribute="top" constant="8" id="ZNA-eS-s8i"/>
+                    <constraint firstAttribute="trailing" secondItem="JGg-mp-CMc" secondAttribute="trailing" constant="13" id="ie4-Si-5Kl"/>
+                    <constraint firstItem="sBo-oB-Myk" firstAttribute="top" secondItem="BER-7i-Q0u" secondAttribute="top" constant="7" id="nse-lZ-QGx"/>
+                    <constraint firstItem="sBo-oB-Myk" firstAttribute="leading" secondItem="sWd-B5-1AI" secondAttribute="trailing" constant="7" id="vH4-tk-vVr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="newNameTF" destination="sBo-oB-Myk" id="Mkl-WK-XNj"/>
+            </connections>
+            <point key="canvasLocation" x="373" y="341"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cameraIcon.png" width="44" height="44"/>
+        <image name="saveIcon.png" width="44" height="44"/>
+    </resources>
+</document>
