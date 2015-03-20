@@ -16,7 +16,6 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let storyboard = UIStoryboard(name: "Main", bundle: nil)
     
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -24,23 +23,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
         
-         
-        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "rotated", name: UIDeviceOrientationDidChangeNotification, object: nil)
         
         //prefersStatusBarHidden()
+        
+        //開啟login
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        
+//        let LoginVC = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as LoginViewController
+//        
+//        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+//        self.window!.rootViewController = LoginVC
+//        self.window!.backgroundColor = UIColor.whiteColor()
+//        self.window!.makeKeyAndVisible()
         
         
         
         // somewhere when your app starts up
         
-        var type = UIUserNotificationType.Badge | UIUserNotificationType.Alert | UIUserNotificationType.Sound
-        var setting = UIUserNotificationSettings(forTypes: type, categories: nil)
-        UIApplication.sharedApplication().registerUserNotificationSettings(setting)
-        UIApplication.sharedApplication().registerForRemoteNotifications()
-
-        
-        
+        // ios8
+        if (UIApplication.sharedApplication().respondsToSelector(Selector("registerForRemoteNotifications")))
+        {
+            var types: UIUserNotificationType = UIUserNotificationType.Badge |
+                UIUserNotificationType.Alert |
+                UIUserNotificationType.Sound
+            
+            var settings: UIUserNotificationSettings = UIUserNotificationSettings( forTypes: types, categories: nil )
+            
+            application.registerUserNotificationSettings( settings )
+            application.registerForRemoteNotifications()
+        }else{
+            // ios7
+            application.registerForRemoteNotificationTypes( UIRemoteNotificationType.Badge |
+                UIRemoteNotificationType.Sound |
+                UIRemoteNotificationType.Alert )
+        }
         return true
     }
     
@@ -68,7 +85,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if(UIDeviceOrientationIsLandscape(UIDevice.currentDevice().orientation))
         { 
             UIApplication.sharedApplication().statusBarHidden = true;
+            
+            //偵
         }
+        
+        
         
         if(UIDeviceOrientationIsPortrait(UIDevice.currentDevice().orientation))
         {

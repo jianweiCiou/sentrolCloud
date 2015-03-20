@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController,LoginViewControllerProtocol,AccountViewControllerProtocol {
+class ViewController: UIViewController,LoginViewControllerProtocol,AccountViewControllerProtocol,LogoutViewControllerProtocol {
 
     //註冊判斷
     var checkIfLogin :Bool = false
@@ -22,7 +22,7 @@ class ViewController: UIViewController,LoginViewControllerProtocol,AccountViewCo
     var EventVC :EventViewController!
     var AccountVC :AccountViewController!
     
-    //var LogininVC :LoginViewController!
+    var LogininVC :LoginViewController!
     
     
     
@@ -41,6 +41,7 @@ class ViewController: UIViewController,LoginViewControllerProtocol,AccountViewCo
     @IBOutlet var botNav_setBtn: UIButton!
     @IBOutlet var botNav_eventBtn: UIButton!
     @IBOutlet var botNav_accBtn: UIButton!
+    @IBOutlet var bottomNaviHeight: NSLayoutConstraint!
     
     
     
@@ -59,8 +60,6 @@ class ViewController: UIViewController,LoginViewControllerProtocol,AccountViewCo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
         //檢查登入
        // goCheckLogInStatus()
@@ -90,39 +89,39 @@ class ViewController: UIViewController,LoginViewControllerProtocol,AccountViewCo
         AccountVC.delegate = self
         
         
-        //LogininVC = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as LoginViewController
+        LogininVC = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as LoginViewController
         
         
-        //LogininVC.delegate = self
+        LogininVC.delegate = self
         
         addChildViewController(DashVC)
         addChildViewController(SetVC)
         addChildViewController(EventVC)
         addChildViewController(AccountVC)
-        //addChildViewController(LogininVC)
+        addChildViewController(LogininVC)
         DashVC.view.frame = contanterView.frame
         SetVC.view.frame = contanterView.frame
         EventVC.view.frame = contanterView.frame
         AccountVC.view.frame = contanterView.frame
-       //LogininVC.view.frame = contanterView.frame
+        LogininVC.view.frame = contanterView.frame
         contanterView.addSubview(DashVC.view)
         contanterView.addSubview(SetVC.view)
         contanterView.addSubview(EventVC.view)
         contanterView.addSubview(AccountVC.view)
-        //contanterView.addSubview(LogininVC.view)
+        contanterView.addSubview(LogininVC.view)
         
         DashVC.didMoveToParentViewController(self)
         SetVC.didMoveToParentViewController(self)
         EventVC.didMoveToParentViewController(self)
         AccountVC.didMoveToParentViewController(self)
-        //LogininVC.didMoveToParentViewController(self)
+        LogininVC.didMoveToParentViewController(self)
          
         //內容區隱藏
         DashVC.view.alpha = 1
         SetVC.view.alpha = 0
         EventVC.view.alpha = 0
         AccountVC.view.alpha = 0
-        //LogininVC.view.alpha = 0
+        LogininVC.view.alpha = 0
         
         
         //偵測旋轉
@@ -147,6 +146,28 @@ class ViewController: UIViewController,LoginViewControllerProtocol,AccountViewCo
         rightNav_accBtn.addTarget(self, action: "clickAccBtn", forControlEvents: UIControlEvents.TouchUpInside)
         
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        //檢查是否有登入過
+        CheckHadLogined()
+        
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
+    //檢查是否有登入過
+    func CheckHadLogined(){
+        
+        //登入失敗
+        bottomNavi.alpha = 0
+        bottomNaviHeight.constant = 0
+        LogininVC.view.alpha = 1
+        
+        
     }
     
     //選單功能
@@ -223,27 +244,23 @@ class ViewController: UIViewController,LoginViewControllerProtocol,AccountViewCo
         {//寬 s
            // contanterTrail.constant = 60
             //DashVC.view.frame = contanterView.frame
-            bottomNavi.alpha = 0
-            rightNavi.alpha = 1
-            
-            
             
             
             //主頁判斷
-            if (checkIfDashVC){
-                //是
-                //DashBoar相關
-                
-                //contanterBottom.constant = 64
-                dashboardBottomNavi.alpha = 1
-                dashboardBottomNaviHeight.constant = 64
-            }else{
-                //不是
-               // contanterBottom.constant = 0
-                dashboardBottomNaviHeight.constant = 0
-                dashboardBottomNavi.alpha = 0
-                
-            }
+//            if (checkIfDashVC){
+//                //是
+//                //DashBoar相關
+//                
+//                //contanterBottom.constant = 64
+//                dashboardBottomNavi.alpha = 1
+//                dashboardBottomNaviHeight.constant = 64
+//            }else{
+//                //不是
+//               // contanterBottom.constant = 0
+//                dashboardBottomNaviHeight.constant = 0
+//                dashboardBottomNavi.alpha = 0
+//                
+//            }
             
 //            if (checkIfLogin){
 //                //已登入
@@ -255,17 +272,13 @@ class ViewController: UIViewController,LoginViewControllerProtocol,AccountViewCo
 //                self.rightNavi.alpha = 0
 //                self.bottomNavi.alpha = 0
 //            }
+            dashboardBottomNavi.alpha = 0
+            
         }
         
         if(UIDeviceOrientationIsPortrait(UIDevice.currentDevice().orientation))
         {//長
-            //contanterTrail.constant = 0
-            //contanterBottom.constant = 48
-           // DashVC.view.frame = contanterView.frame
-            
-            bottomNavi.alpha = 1
-            rightNavi.alpha = 0
-            
+           
             
             
             dashboardBottomNavi.alpha = 0
@@ -298,10 +311,10 @@ class ViewController: UIViewController,LoginViewControllerProtocol,AccountViewCo
     
     
     func dimissLogininVC(){
-        //self.LogininVC.view.alpha = 0
+        self.LogininVC.view.alpha = 0
         clickDashBtn()
         bottomNavi.alpha = 1
-    
+        bottomNaviHeight.constant = 48
     }
     
     //
@@ -334,12 +347,17 @@ class ViewController: UIViewController,LoginViewControllerProtocol,AccountViewCo
         let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("FeedbackViewController") as FeedbackViewController
         presentViewController(viewController, animated: true, completion: nil)
     }
+    func showScannerVC(){
+        let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ScannerViewController") as ScannerViewController
+        presentViewController(viewController, animated: true, completion: nil)
+    }
     func showMessageVC(){
         let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("MessageViewController") as MessageViewController
         presentViewController(viewController, animated: true, completion: nil)
     }
     func showLogoutVC(){
         let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("LogoutViewController") as LogoutViewController
+        viewController.delegate = self
         presentViewController(viewController, animated: true, completion: nil)
     }
     

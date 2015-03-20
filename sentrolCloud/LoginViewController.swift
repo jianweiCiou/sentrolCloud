@@ -9,14 +9,14 @@
 import UIKit
 import CoreData
 
-protocol  LoginViewControllerProtocol{
+protocol LoginViewControllerProtocol{
 
     
 func dimissLogininVC()
 }
 
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     var delegate:LoginViewControllerProtocol?
     var dataSource:LoginViewControllerProtocol?
@@ -24,28 +24,6 @@ class LoginViewController: UIViewController {
     var mainVC : UIViewController!
     
     var people = [NSManagedObject]()
-    
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        //先撈本機資料庫
-       // fetched_Person_Results()
-        
-        //圓角
-        singInBtn.layer.cornerRadius = 21
-        joinUsBtn.layer.cornerRadius = 10.5
-         
-        
-        
-        
-        
-        
-    }
-    
-    
-    
-    
     
     
     
@@ -62,8 +40,35 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var acctEmailTF: UITextField!
     @IBOutlet weak var passTF: UITextField!
     
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //對話筐
+        self.acctEmailTF.delegate = self
+        self.passTF.delegate = self
+        
+        //圓角
+        singInBtn.layer.cornerRadius = 21
+        joinUsBtn.layer.cornerRadius = 10.5
+        
+        
+        //偵測旋轉
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "rotated", name: UIDeviceOrientationDidChangeNotification, object: nil)
+        
+        fetched_Person_Results()
+        // Do any additional setup after loading the view.
+    }
+
+    
+    
+    
+    
     //loginBtnAction
     @IBAction func singInClick(sender: AnyObject) {
+        acctEmailTF.resignFirstResponder()
+        passTF.resignFirstResponder()
         
         //取的帳密
         var acctEmailTFtext : String = acctEmailTF.text
@@ -84,8 +89,24 @@ class LoginViewController: UIViewController {
         }
         
         //儲存帳戶與密碼
-        saveCoreData_Person("account", value: self.acctEmailTF.text)
-        saveCoreData_Person("password", value: self.passTF.text)
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let managedContext = appDelegate.managedObjectContext!
+        let entity =  NSEntityDescription.entityForName("Person",inManagedObjectContext:managedContext)
+        let person = NSManagedObject(entity: entity!,insertIntoManagedObjectContext:managedContext)
+    
+        person.setValue(self.acctEmailTF.text, forKey: "account")
+        person.setValue(self.passTF.text, forKey: "password")
+        
+        
+        var error: NSError?
+        if !managedContext.save(&error) {
+            println("Could not save \(error), \(error?.userInfo)")
+        }
+        fetched_Person_Results()
+        
+        
+        
+        
         
         //開始進入雲端
         connectSentrolCloud()
@@ -93,6 +114,7 @@ class LoginViewController: UIViewController {
     
     //開始進入雲端
     func connectSentrolCloud(){
+        println("開始進入雲端")
         //開啟loading遮罩
         var overlay : UIView? // This should be a class variable
         overlay = UIView(frame: view.frame)
@@ -112,34 +134,51 @@ class LoginViewController: UIViewController {
                 let responseDict = responseObject as Dictionary<String, AnyObject>
                 
                 if (responseDict["account"] != nil){
+                    println("成功登入")
+                    var account = responseDict["account"] as String!
                     var country = responseDict["country"] as String!
                     var first_name = responseDict["first_name"] as String!
                     var language = responseDict["language"] as String!
                     var last_name = responseDict["last_name"] as String!
                     
-                    self.saveCoreData_Person("country", value: country)
-                    self.saveCoreData_Person("first_name", value: first_name)
-                    self.saveCoreData_Person("language", value: language)
-                    self.saveCoreData_Person("last_name", value: last_name)
+                    //存本機資料
+                    let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+                    let managedContext = appDelegate.managedObjectContext!
+                    let entity =  NSEntityDescription.entityForName("Person",inManagedObjectContext:managedContext)
+                    let person = NSManagedObject(entity: entity!,insertIntoManagedObjectContext:managedContext)
                     
-                    let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as UIViewController
-                    self.navigationController?.setViewControllers([viewController], animated: false)
-
                     
-//                    let ViewControllerVC = storyboard?.instantiateViewControllerWithIdentifier("ViewController") as ViewController
-//                    presentViewController(ViewControllerVC, animated: true, completion:nil)
-//                    
+                    person.setValue(account, forKey: "account")
+                    person.setValue(self.passTF.text, forKey: "password")
+                    person.setValue(country, forKey: "country")
+                    person.setValue(first_name, forKey: "first_name")
+                    person.setValue(language, forKey: "language")
+                    person.setValue(last_name, forKey: "last_name")
+                    
+                    var error: NSError?
+                    if !managedContext.save(&error) {
+                        println("Could not save \(error), \(error?.userInfo)")
+                    }
+                    self.fetched_Person_Results()
+                    
+                    
+                    
+                    
+                    self.delegate?.dimissLogininVC()
+                    overlay?.removeFromSuperview()
+                    
+                    
+                    
                 }else{
-                
+                    
+                    overlay?.removeFromSuperview()
+                    self.makeAlert("Login failed !")
                 
                 }
                 
                 
                 
-                overlay?.removeFromSuperview()
                 
-                //關掉登入
-                self.delegate?.dimissLogininVC()
                 
             },
             failure: { (operation: AFHTTPRequestOperation!,error: NSError!) in
@@ -162,7 +201,7 @@ class LoginViewController: UIViewController {
     
     
     func saveCoreData_Person(key: String, value: String) {
-      //  println("key & value: \(key), \(value)")
+        println("key & value: \(key), \(value)")
         let appDelegate =
         UIApplication.sharedApplication().delegate as AppDelegate
         
@@ -177,36 +216,26 @@ class LoginViewController: UIViewController {
         
         person.setValue(value, forKey: key)
         
+        
         var error: NSError?
         if !managedContext.save(&error) {
             println("Could not save \(error), \(error?.userInfo)")
         }
-        people.append(person)
+        //people.append(person)
         
         fetched_Person_Results()
     }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-//        var vc = ViewController()
-//        self.presentViewController(vc, animated: true, completion: nil)
-//        
-        
-        
-        //先進入
-        let viewController = storyboard?.instantiateViewControllerWithIdentifier("ViewController") as UIViewController
-        self.presentViewController(viewController, animated: true, completion:nil)
-        
-        
-        
-        //偵測旋轉
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "rotated", name: UIDeviceOrientationDidChangeNotification, object: nil)
-        
-        // Do any additional setup after loading the view.
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
+    {
+        textField.resignFirstResponder()
+        return true;
     }
-
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -241,18 +270,22 @@ class LoginViewController: UIViewController {
         managedContext.executeFetchRequest(fetchRequest,
             error: &error) as [NSManagedObject]?
         
+        
+        
         if let results = fetchedResults {
             people = results
             //有資料時
             if (people.count > 0 ){
                 
+                
+                
                 var number = (people.count - 1)
                 let person = people[number]
-                var accountString:String
-                //accountString = results.valueForKey("account") as String
-                
-                //println("local data \(accountString)")
+                //var accountString:String
+                println("local data \(person)")
                 //帳號
+                
+                
                 if ((person.valueForKey("account")) != nil){
                     self.acctEmailTF.text = person.valueForKey("account") as String?
                 }
@@ -266,6 +299,15 @@ class LoginViewController: UIViewController {
         }
     }
 
+    
+    @IBAction func openRegistr(sender: AnyObject) {
+        
+        //開啟註冊
+        let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("RegistViewController") as RegistViewController
+        presentViewController(viewController, animated: true, completion: nil)
+        
+    }
+    
     /*
     // MARK: - Navigation
 

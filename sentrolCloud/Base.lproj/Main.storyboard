@@ -29,44 +29,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="552"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C6K-NW-l9m" userLabel="右選單">
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JC3-Dc-dcv">
-                                        <rect key="frame" x="0.0" y="0.0" width="74" height="264"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bk-jQ-oFM">
-                                                <rect key="frame" x="0.0" y="0.0" width="64" height="58"/>
-                                                <state key="normal" image="r-n-1.jpg">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F29-H2-cZv">
-                                                <rect key="frame" x="0.0" y="58" width="64" height="58"/>
-                                                <state key="normal" image="r-n-2.jpg">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpd-de-dlz">
-                                                <rect key="frame" x="0.0" y="116" width="64" height="58"/>
-                                                <state key="normal" image="r-n-3.jpg">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOg-pj-efG">
-                                                <rect key="frame" x="0.0" y="174" width="64" height="58"/>
-                                                <state key="normal" image="r-n-4.jpg">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" id="O6Z-UT-W6a"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5b-Sc-SkE" userLabel="底選單">
                                 <rect key="frame" x="0.0" y="552" width="600" height="48"/>
                                 <subviews>
@@ -114,22 +76,60 @@
                                     </constraint>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C6K-NW-l9m" userLabel="右選單">
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JC3-Dc-dcv">
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="264"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bk-jQ-oFM">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="58"/>
+                                                <state key="normal" image="r-n-1.jpg">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F29-H2-cZv">
+                                                <rect key="frame" x="0.0" y="58" width="64" height="58"/>
+                                                <state key="normal" image="r-n-2.jpg">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpd-de-dlz">
+                                                <rect key="frame" x="0.0" y="116" width="64" height="58"/>
+                                                <state key="normal" image="r-n-3.jpg">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOg-pj-efG">
+                                                <rect key="frame" x="0.0" y="174" width="64" height="58"/>
+                                                <state key="normal" image="r-n-4.jpg">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="O6Z-UT-W6a"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Z5b-Sc-SkE" firstAttribute="top" secondItem="T52-Ml-dFm" secondAttribute="bottom" id="5D4-Ml-2Ea"/>
-                            <constraint firstItem="C6K-NW-l9m" firstAttribute="leading" secondItem="T52-Ml-dFm" secondAttribute="trailing" id="7Jw-cY-9G0"/>
+                            <constraint firstItem="T52-Ml-dFm" firstAttribute="top" secondItem="hPZ-rQ-yRJ" secondAttribute="top" id="9iy-q8-tsH"/>
+                            <constraint firstItem="C6K-NW-l9m" firstAttribute="leading" secondItem="T52-Ml-dFm" secondAttribute="trailing" id="D7s-cW-UhC"/>
+                            <constraint firstItem="T52-Ml-dFm" firstAttribute="leading" secondItem="hPZ-rQ-yRJ" secondAttribute="leading" id="INO-BD-sKE"/>
                             <constraint firstAttribute="trailing" secondItem="8eh-9I-daf" secondAttribute="trailing" id="QXx-Tg-bCu"/>
                             <constraint firstItem="8eh-9I-daf" firstAttribute="leading" secondItem="hPZ-rQ-yRJ" secondAttribute="leading" id="VzX-29-SWO"/>
-                            <constraint firstItem="T52-Ml-dFm" firstAttribute="leading" secondItem="hPZ-rQ-yRJ" secondAttribute="leading" id="Y1o-eJ-bu0"/>
                             <constraint firstItem="Z5b-Sc-SkE" firstAttribute="leading" secondItem="hPZ-rQ-yRJ" secondAttribute="leading" id="anZ-Uh-URx"/>
+                            <constraint firstItem="Z5b-Sc-SkE" firstAttribute="top" secondItem="T52-Ml-dFm" secondAttribute="bottom" id="b7L-Jw-2b8"/>
                             <constraint firstAttribute="trailing" secondItem="C6K-NW-l9m" secondAttribute="trailing" id="cvC-Yp-YPf"/>
                             <constraint firstAttribute="trailing" secondItem="Z5b-Sc-SkE" secondAttribute="trailing" id="dlF-Ko-Ycd"/>
                             <constraint firstItem="C6K-NW-l9m" firstAttribute="top" secondItem="hPZ-rQ-yRJ" secondAttribute="top" id="eve-wu-iKb"/>
                             <constraint firstItem="6RZ-Au-Ir1" firstAttribute="top" secondItem="Z5b-Sc-SkE" secondAttribute="bottom" id="qAb-aE-9aa"/>
                             <constraint firstItem="6RZ-Au-Ir1" firstAttribute="top" secondItem="8eh-9I-daf" secondAttribute="bottom" id="t3u-dP-kY0"/>
-                            <constraint firstItem="6RZ-Au-Ir1" firstAttribute="top" secondItem="C6K-NW-l9m" secondAttribute="bottom" id="uz5-iY-rGn"/>
-                            <constraint firstItem="T52-Ml-dFm" firstAttribute="top" secondItem="hPZ-rQ-yRJ" secondAttribute="top" id="yVF-Jv-HZ1"/>
+                            <constraint firstItem="6RZ-Au-Ir1" firstAttribute="top" secondItem="C6K-NW-l9m" secondAttribute="bottom" constant="48" id="uz5-iY-rGn"/>
                         </constraints>
                     </view>
                     <connections>
@@ -138,6 +138,7 @@
                         <outlet property="botNav_eventBtn" destination="O81-19-vsg" id="Gc2-Ab-Cza"/>
                         <outlet property="botNav_setBtn" destination="N1G-Qr-j8o" id="1nh-BU-mib"/>
                         <outlet property="bottomNavi" destination="Z5b-Sc-SkE" id="T3L-zr-scc"/>
+                        <outlet property="bottomNaviHeight" destination="7Jj-wu-bYb" id="7YY-Mz-OFU"/>
                         <outlet property="contanterView" destination="T52-Ml-dFm" id="0Wc-kS-hiq"/>
                         <outlet property="dashboardBottomNavi" destination="8eh-9I-daf" id="V7k-3Y-SOw"/>
                         <outlet property="dashboardBottomNaviHeight" destination="pwk-DD-mId" id="OB1-fS-ulh"/>
@@ -444,47 +445,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flb-Uz-6ek">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="RPa-fK-ruv">
-                                        <variation key="heightClass=compact" constant="0.0"/>
-                                    </constraint>
-                                </constraints>
-                                <color key="barTintColor" red="0.34901960780000002" green="0.5450980392" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Event" id="lLB-DW-Sow">
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="pjx-Pr-wO2">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pIc-ji-V4J">
-                                                <rect key="frame" x="451" y="24" width="60" height="35"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.35686274509999999" green="0.37254901959999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <state key="normal" title="Filter">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="filterShow:" destination="rqY-2M-qX1" eventType="touchUpInside" id="cby-PY-mZV"/>
-                                                </connections>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                                <variation key="heightClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="RPa-fK-ruv"/>
-                                    </mask>
-                                </variation>
-                            </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQj-2h-s6s">
                                 <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                                 <subviews>
@@ -661,11 +621,54 @@
                                     <constraint firstItem="g6F-V2-gxD" firstAttribute="leading" secondItem="i7q-G3-IHV" secondAttribute="leading" id="uA4-rI-iJd"/>
                                 </constraints>
                             </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flb-Uz-6ek">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="RPa-fK-ruv">
+                                        <variation key="heightClass=compact" constant="0.0"/>
+                                    </constraint>
+                                </constraints>
+                                <color key="barTintColor" red="0.34901960780000002" green="0.5450980392" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Event" id="lLB-DW-Sow"/>
+                                </items>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="RPa-fK-ruv"/>
+                                    </mask>
+                                </variation>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVZ-jC-l0z">
+                                <rect key="frame" x="530" y="20" width="60" height="35"/>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.37254901959999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="qRH-VA-FzY"/>
+                                    <constraint firstAttribute="width" constant="60" id="w0V-yH-8pk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Filter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="filterShow:" destination="rqY-2M-qX1" eventType="touchUpInside" id="g6U-PS-dFm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="flb-Uz-6ek" firstAttribute="top" secondItem="Hhi-R5-bR1" secondAttribute="top" id="0eQ-kd-QfA"/>
                             <constraint firstItem="FDd-Oa-uuI" firstAttribute="top" secondItem="lQj-2h-s6s" secondAttribute="bottom" id="4ss-yO-gr6"/>
+                            <constraint firstAttribute="trailing" secondItem="kVZ-jC-l0z" secondAttribute="trailing" constant="10" id="9gm-Qe-uA8"/>
+                            <constraint firstItem="kVZ-jC-l0z" firstAttribute="top" secondItem="84Z-YV-csD" secondAttribute="bottom" id="JVG-TQ-pvT"/>
                             <constraint firstItem="Rta-dW-xBx" firstAttribute="top" secondItem="FDd-Oa-uuI" secondAttribute="bottom" id="Nhn-zq-k1S"/>
                             <constraint firstItem="flb-Uz-6ek" firstAttribute="leading" secondItem="Hhi-R5-bR1" secondAttribute="leading" id="SF1-8e-FNk"/>
                             <constraint firstItem="i7q-G3-IHV" firstAttribute="leading" secondItem="Hhi-R5-bR1" secondAttribute="leading" id="UCF-Ic-K5U"/>
@@ -749,6 +752,379 @@
             </objects>
             <point key="canvasLocation" x="162" y="1512"/>
         </scene>
+        <!--Regist View Controller-->
+        <scene sceneID="tFN-nP-r73">
+            <objects>
+                <viewController restorationIdentifier="RegistViewController" storyboardIdentifier="RegistViewController" id="shA-eT-Mgs" customClass="RegistViewController" customModule="sentrolCloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o2F-u1-aRV"/>
+                        <viewControllerLayoutGuide type="bottom" id="C1R-40-6Uc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Unw-VW-Van">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbm-MF-xhD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="ZH8-fF-guD"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.34901960780000002" green="0.5450980392" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Register" id="km9-s4-eqF"/>
+                                </items>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-1" y="6" width="600" height="44"/>
+                                </variation>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4r-Bg-3LH">
+                                <rect key="frame" x="10" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="9PY-N2-hPr"/>
+                                    <constraint firstAttribute="height" constant="44" id="iUX-FZ-NSF"/>
+                                </constraints>
+                                <state key="normal" image="topNavi_back_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissView:" destination="shA-eT-Mgs" eventType="touchUpInside" id="TXc-AC-las"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fvh-a8-XgD" userLabel="條款View">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhD-uh-OkK">
+                                        <rect key="frame" x="210" y="32" width="181" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="BvC-68-ngu"/>
+                                            <constraint firstAttribute="width" constant="181" id="sAb-jK-r6F"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.37254901959999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yq7-Bb-uBa">
+                                        <rect key="frame" x="8" y="73" width="584" height="500"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">1. What the Contract Covers.
+
+This contract is in electronic form and is a valid contract between you and Nietzsche Enterprise Co., Ltd., 4F., No.560, Sec. 2, Chung Shan Rd., Chung Ho Dist., New Taipei City 235, Taiwan (referred to below as “NHR,” “we,” “us” or “our”). This contract applies to all NHR services, systems and, software (the “Services”), furnished by us to you under our SentrolCloud trademark, whether such Services are furnished in whole or in part offline or online through an authenticated network or a web-based portal. We shall have the right to modify any term or condition of this contract or eliminate or add any term or condition (“Modifications”), provided that we provide notice of such Modifications by posting notice thereof on our website at http://sentrolcloud.com/services-agreement at least thirty (30) days prior to any such Modification taking effect. If you do not agree to any Modification, then your sole remedy shall be to stop using the Services before the Modification takes effect. YOUR CONTINUED USE OF THE SERVICES AFTER THE EFFECTIVE DATE OF ANY MODIFICATION SHALL CONSTITUTE YOUR AGREEMENT TO AND ACCEPTANCE OF SUCH MODIFICATION. 
+
+2. Customer Accounts and Access.
+
+2.1 Customer Account. Once you have established a Customer Account, you may use the Services. An individual shall have only one Customer Account which only you, the individual, may use. No other person may access and/or use your individual Customer Account, even on your behalf. For some features of the Services, we may allow you to set up member accounts which are dependent on your account (an "Associated Account") and are established by you for the use and/or benefit of third parties (“Associated Account Users”).
+2.2 You shall at all times be responsible for any activity that take place under your Customer Account and each Associated Account.
+2.3 NHR does not automatically provide customer support as part of the Services, but we may do so at our sole discretion.
+2.4 NHR Authenticated Network. We may provide you with credentials on our authenticated network to use with the Services. In the event we do so, you shall be solely responsible for maintaining the secrecy of your credentials. We may, at our sole option, cancel or suspend your (and/or each Associated Account’s) access to our authenticated network for failure to sign in to our authenticated network for an extended period, as determined by us. If we cancel your credentials, your right to use our authenticated network immediately ceases. 
+
+3. Your Obligations While Using the Services.
+
+3.1 You shall at all times:
+· obey any codes of conduct or other notices we provide; 
+· keep your service account password secret; and 
+· promptly notify us if you learn of a security breach related to the service.
+
+3.2 You shall not at any time:
+
+3.2.1 Engage in any of the following:
+· facilitate or further unlawful conduct;
+· use the Services in a way that harms us or our affiliates, licensors, licensees, resellers, distributors, vendors any of our or their customers, or any network or service by or through which we provide the Services; use any portion of the Services as a destination linked from any unsolicited bulk messages or unsolicited commercial messages (so-called "spam");· use any unauthorized means to modify or reroute, or attempt to modify or reroute, the Services; damage, disable, overburden, or impair the Services (or the network(s) used in connection therewith) or interfere with anyone's use and enjoyment of the Services;
+
+3.2.2 without the express written permission of NHR Corporation, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, modify, alter, transfer or sell any information provided by the Services, as defined in paragraph 1 above; or resell or redistribute the Services or any part thereof. For the avoidance of doubt the foregoing does not include customer owned data and is intended solely to protect SentrolCloud service, the underlying code, and the format from being copied, used, etc by others, without NHR’s permission. Nor does the foregoing prohibit you from providing an enhanced level of service to your customers. Enhanced level of service includes the gathering of data from your customers and their sites, using, processing and/or manipulating that data, and sharing access to the data on SentrolCloud with your customers. 
+
+3.3 The obligations contained in paragraphs 3.1 and 3.2 above shall also apply to Associated Account Users and you shall be fully responsible for the performance of such obligations by Associated Account Users. 
+
+3.2.2 without the express written permission of NHR Corporation, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, modify, alter, transfer or sell any information provided by the Services, as defined in paragraph 1 above; or resell or redistribute the Services or any part thereof. For the avoidance of doubt the foregoing does not include customer owned data and is intended solely to protect SentrolCloud service, the underlying code, and the format from being copied, used, etc by others, without NHR’s permission. Nor does the foregoing prohibit you from providing an enhanced level of service to your customers. Enhanced level of service includes the gathering of data from your customers and their sites, using, processing and/or manipulating that data, and sharing access to the data on SentrolCloud with your customers. 
+
+3.3 The obligations contained in paragraphs 3.1 and 3.2 above shall also apply to Associated Account Users and you shall be fully responsible for the performance of such obligations by Associated Account Users. 
+
+4. Your Content.
+
+4.1 In connection with the Services, you may submit, store and/or process data and other information provided by you and/or Associated Account Users and/or retrieve or download data and other information pertaining to your or Associated Account Users’ hardware or devices (collectively, your “Content”). NHR does not control Content and does not claim ownership over Content. However, you hereby grant NHR the right to use, modify the form of, copy, distribute and display Content to the extent necessary to provide the Services, including without limitation, (a) storing and retrieving Content; (b) making Content available to you and to those authorized by you to access or receive Content; (c) conforming to the connecting networks' technical requirements; and (d) conforming to the limitations and terms of the Services. Furthermore, you warrant and represent that at all times the use of Content by you and NHR pursuant to this contract does not and will not infringe upon or violate any rights of any third party, including without limitation intellectual property rights and rights of privacy.
+
+4.2 NHR reserves the right to remove at any time any Content that violates this contract or any policy of NHR. 
+
+4.3 It is your sole responsibility properly to configure and use the Services and take all necessary steps to maintain appropriate security, protection and backup of your Content.
+
+5. Privacy.
+
+5.1 In order to operate and provide the Services, we collect certain information about you and Associated Account Users. We use and protect that information according to the laws of the Republic of China. In particular, we may access or disclose such information, including the content of your and Associated Account Users’ communications, in order to: (a) enforce our agreements (including this contract) or policies governing the use of the Services; (b) comply with the law or respond to lawful requests or legal process; (c) protect the personal safety, rights or property of NHR, its employees and the public.5.2 In order to provide the Services to you or Associated Account Users, we may also collect certain information not intended to identify you or Associated Account Users personally, including without limitation data or information regarding service performance, use of the Services, and any devices accessing our network including posting devices, computer, tablet, Smartphone® or other similar devices. We may automatically upload this information from any devices accessing our network.
+
+5.3 NHR retains the right to block or otherwise prevent delivery of any type of email or other communication to or from the Services as part of our efforts to protect the Services, our business and customers or to enforce the terms and conditions of this contract.
+
+6. Software.
+
+6.1 If you receive software from us as part of the Services (“Software”), your use of such Software shall be in full compliance with the terms of the license presented to you for acceptance of such Software. If no license is presented to you, then you shall have the right to use the Software only for the authorized uses of the Services under this contract and on that number of computers specifically authorized by NHR. We reserve all other rights to any Software.
+
+6.2 We may automatically check your version of the Software. We may automatically download upgrades to the Software to your computer to update, enhance and further develop the Services. We shall ordinarily provide you with warnings of any upgraded versions of Software to permit you the option of when to install an upgrade. However, we reserve the right to update your Software without notifying you in those circumstances in which we deem it necessary.
+
+6.3 Unless otherwise stated in the license for any particular Software, your license to use Software shall end on termination of the Services for whatever reason. Upon such termination, (i) you shall promptly uninstall any Software; and (ii) we shall have the right, in our sole discretion, to disable any Software.
+
+6.4 You shall not disassemble, decompile, or reverse engineer any Software.
+
+6.5 Software may be subject to Republic of China, Taiwan export laws and regulations. You must at all times comply with all domestic and international export laws and regulations that apply to Software. These laws include restrictions on destinations, end users and end use.
+
+7. Intellectual Property Rights.
+
+7.1 NHR retains all right, title and interest in and to the Services and the results thereof (but not your Content), including all copyrights, patents, trade secrets, trademarks and other intellectual property rights therein and thereto. NHR reserves all rights not expressly granted. This contract shall not be deemed to grant or imply any right to any NHR trademark, trade name, logo, software, system, intellectual property or personal property of NHR unless otherwise explicitly stated.
+
+7.2 All copyrightable contents of the Services are copyright © 2014-2015 Nietzsche Enterprise Co., Ltd. and/or its suppliers, 4F., No.560, Sec. 2, Chung Shan Rd., Chung Ho Dist., New Taipei City 235, Taiwan
+
+7.3 Nietzsche Enterprise Co., Ltd., Nietzsche Enterprise, NHR, Sentrolcloud and its Logo, and other marks indicated on our website or in our software and the logo forms of the foregoing marks are trademarks and/or service marks of NHR and may be registered in the Republic of China or in other jurisdictions including internationally. NHR's trademarks, service marks and trade dress may not be used in connection with any product or service that is not affiliated with NHR and/or in any manner that is likely to cause confusion among customers and/or or in any manner that disparages or discredits NHR. All trademarks not owned by NHR that appear on NHR’s website or in product literature or in manuals are the property of their respective owners who may or may not be affiliated with, connected to, or sponsored by NHR. No association with any company, entity, product, domain name, e-mail address, logo, person, places or events is intended or should be inferred. Any rights not expressly granted herein are reserved.
+
+8. Changes to or Cancellation of the Services.
+
+8.1 We may change the Services or delete features or functionality at any time and for any reason. We may terminate or suspend this contract or the Services at any time. Such termination or suspension shall be at our sole discretion and may be without cause and/or without notice. Upon such termination or suspension, your right to use the Services shall cease immediately.
+
+8.2 Upon termination or suspension of the Services, however caused, NHR may delete your Content permanently from its servers. Notwithstanding the foregoing, we shall take appropriate steps and reasonable care, but without any obligation or liability to you whatsoever, to provide you with access, if possible, to your Content for up to ninety (90) days, but for the sole purpose of your making a backup thereof.
+
+8.3 Termination or suspension of the Services, however cause, shall not alter your obligation to pay all charges, if any, made to your billing account prior to termination. If we terminate the Services in their entirety without cause, we will refund to you on a pro-rata basis the amount which you have paid, if any, for any unused portion of the Services.
+
+9. EXCLUSION OF WARRANTIES.
+
+WE PROVIDE THE SERVICES "AS IS" AND DO NOT GUARANTEE THE ACCURACY OR TIMELINESS OF INFORMATION AVAILABLE THROUGH OR AS THE RESULT OF THE SERVICES. WE AND OUR AFFILIATES, RESELLERS, DISTRIBUTORS AND VENDORS (COLLECTIVELY, THE "NHR PARTIES") MAKE NO WARRANTY OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, AND NHR AND THE NHR PARTIES SPECIFICALLY DISCLAIM ALL IMPLIED WARRANTIES, INCLUDING ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, WE DO NOT REPRESENT OR WARRANT THAT YOUR USE OF THE SERVICES WILL MEET YOUR REQUIREMENTS OR THAT YOUR USE OF THE SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE OR FREE FROM ERROR. AS PART OF THE SERVICES, WE MAY MAKE AVAILABLE FOR DOWNLOAD CERTAIN TOOLS AND UTILITIES. THE FOREGOING EXCLUSION OF WARRANTIES SHALL APPLY TO ALL SUCH TOOLS AND UTILITIES.
+
+10. LIMITATION ON LIABILITY.
+
+10.1 IN NO EVENT SHALL NHR OR ITS OWNERS, DIRECTORS, OFFICERS, SHAREHOLDERS, EMPLOYEES, CONTRACTORS OR AGENTS OR THE NHR PARTIES AND THEIR OWNERS, DIRECTORS, MEMBERS, OFFICERS, SHAREHOLDERS, EMPLOYEES, CONTRACTORS OR AGENTS HAVE ANY LIABILITY TO YOU OR ANY PERSON CLAIMING THROUGH YOU (INCLUDING WITHOUT LIMITATION ASSOCIATED ACCOUNT USERS) FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, COMPENSATORY OR PUNITIVE DAMAGES HOWEVER CAUSED, WHETHER IN CONTRACT, TORT OR UNDER ANY OTHER THEORY OF LIABILITY, AND WHETHER OR NOT YOU OR ANY OF THE AFOREMENTIONED PARTIES HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. WITHOUT LIMITING THE FOREGOING, NHR AND ITS OWNERS, DIRECTORS, OFFICERS, SHAREHOLDERS, EMPLOYEES, CONTRACTORS OR AGENTS AND THE NHR PARTIES AND THEIR OWNERS, DIRECTORS, MEMBERS, OFFICERS, SHAREHOLDERS, EMPLOYEES, CONTRACTORS OR AGENTS SHALL HAVE NO LIABILITY WHATSOEVER FOR LOSS OF PROFITS, REVENUE OR DATA OR FOR INTERRUPTIONS IN THE SERVICES. THE FOREGOING DISCLAIMER SHALL APPLY TO THE FULLEST EXTENT OF THE LAW.
+
+10.2 NOTWITHSTANDING THE FOREGOING, IN THE EVENT THAT YOU HAVE PAID NHR FOR THE SERVICES, YOU MAY RECOVER FROM NHR THOSE DIRECT DAMAGES INCURRED BY YOU (BUT NOT INCURRED BY ASSOCIATED ACCOUNT USERS) WHICH ARE CAUSED SOLELY BY NHR, PROVIDED HOWEVER, THAT SUCH DIRECT DAMAGES SHALL IN NO EVENT EXCEED THE LESSER OF THE FEE PAID BY YOU TO NHR DURING THE MONTH IN WHICH SUCH DAMAGE OCCURRED OR WAS DISCOVERED BY YOU, OR THREE HOUDRED THOUSAND ($300,000.00) NEW TAIWAN DOLLARS.
+
+11. Indemnification.
+
+Except as provided in paragraph 10.2 above, you hereby agree to and do indemnify, save and hold harmless NHR and its owners, directors, officers, shareholders, employees, contractors or agents, and the NHR Parties and their respective owners, directors, members, officers, shareholders, employees, contractors or agents, from any and all damages, liabilities, costs and expenses (including reasonable attorneys’ fees, legal expenses and court costs) arising out of or connected to any claim, demand, action or proceeding which is based upon or in any way related to (a) your or any Associated User’s use of the Services; (b) any act or omission by you or any Associated User in violation of this contract (including any Modifications) or of NHR’s policies; or (c) any breach of any warranty, representation or covenant made by you in this contract.
+
+12. Trial Period Offers.
+
+You may have received a limited time of free access to the Services or part thereof. Unless we notify you otherwise, if you are participating in any trial period offer, you must cancel the Services by the end of the trial period in order to avoid incurring charges. If you do not cancel the Services and we have informed you that the services will automatically be converted into a paid subscription at the end of the trial period, then you authorize us to charge your payment method for the Services.
+
+13. If You Pay NHR.
+
+13.1 Charges. This paragraph 12 applies in all situations in which you pay NHR for the Services.
+
+13.2 Payment. When you create a billing account, you authorize us to charge you for the Services (including any paid feature of the Services which you choose or use while this contract is in force) using the payment method selected by you. Service charges shall be paid in advance. We may charge you a different amount than what you approved, but if the amount we charge you is more than what you approved, we may charge you up to the approved amount and bill you for the difference. We may also bill you for more than one of your prior billing periods simultaneously. If we have informed you that the Services will be provided indefinitely or automatically renewed, then we may automatically renew the Services and charge you for each renewal term.
+
+13.3 Updates to Your Billing Account. In order not to experience an interruption in the Services, you must keep all information in your billing account current, including your billing address and the expiration date of your credit card. (You may change your payment method at any time.)
+
+13.4 Prices and Price Increases. Charges for Services related to Customer Accounts and Associated Accounts shall be established by NHR from time to time, but we will provide notice of any price increases in accordance with paragraph 1 above. The prices for Services exclude all taxes and phone charges, unless otherwise stated. You are responsible for any first appears on your bill. Following such notification, we shall verify the information you have provided us and make any appropriate adjustments. Unless you have so notified us, each billing statement shall be deemed final and binding and shall constitute an account stated upon one hundred twenty (120) days from the date it was first rendered online.
+
+13.8 Canceling the Service. You may terminate the Services at any time, with or without cause. Certain offers for the Services may require payment of cancellation charges and you shall pay all such charges. Your notification to us to terminate the Services shall not affect your obligation to pay the charges we submit to your billing account before we reasonably could act on your request.
+
+13.9 Late Payments. Except to the extent prohibited by law, we may assess a late charge if you do not pay on time. You must pay these late charges when we bill you for them. The late charge will be the lesser of 1% of the unpaid amount each month or the maximum rate that is permitted by law. We may use a third party to collect past due amounts. You must pay for all reasonable costs we incur to collect any past due amounts. These costs may include attorneys' fees, court costs and other expenses. We may suspend or cancel the Services if you fail to pay in full on time.
+
+13.10 Internet Access. You are solely responsible for paying the fees charged by your Internet access provider in order for you to be able to access the Services.
+
+14. Assignment.
+
+We may assign this contract, in whole or in part, at any time with or without notice to you. You may not assign this contract, or any part of it, to any other person without our prior written approval. Any attempt by you to do so is void. You may not transfer to anyone else, either temporarily or permanently, any rights to use the Services or any part of the Services.
+
+15. Claim Must Be Filed Within One Year.
+
+Any legal claim that you may have arising out of or related to this contract or the Services must be brought by you within one year of the date on which such claim arose. If it is not filed in time in a court of competent jurisdiction, then the claim is permanently barred. This foregoing shall apply to you and any of your successors-in-interest.
+
+16. Your Notices to Us.
+
+Any notice which you are required or desire to give to NHR under this contract may be sent to NHR as provided in the customer support or "help" area for the Services. NHR does not accept e-mail notices.
+
+17. Notices We Send You; Consent Regarding Electronic Information.
+
+Except as stated in paragraph 1 above, any notice which we are required or desire to give you may be provided in electronic form by (a) email, at the email address you specified when you signed up for the Services; (b) access to a NHR website that will be designated in an e-mail notice sent to you at the time the information is available; or (c) access to a NHR web site that will be generally designated in advance for this purpose. By using the Services you consent to receive any and all such notices from NHR. In the event that you disagree, you must stop using the services.
+
+18. Interpreting this Contract.
+
+18.1 This contract constitutes the entire understanding between you and us with respect to the subject matter hereof and supersedes any prior contract or understanding regarding your use of the Services, provided, however, that if you have confidentiality obligations related to the Services (for example, you may have been a beta tester), those obligations remain in force and effect.
+
+18.2 No provision of this Agreement shall be deemed to have been waived by any act or acquiescence of NHR, its owners, directors, officers, shareholders, employees, contractors or agents, and may only be waived by an instrument in writing signed by an authorized officer of NHR. No such written waiver of any provision of this contract shall constitute a waiver of any other provision(s) or of the same provision on another occasion.
+
+18.3 In the event that any term or condition of this contract is held by a court of competent jurisdiction to be invalid or unenforceable, the remainder of this contract shall remain in force and effect.
+
+18.4 This contract is solely for your and our benefit. It is not for the benefit of any other person, except for permitted successors and assigns under this contract. Consequently, in no event shall users or beneficiaries of Associated Accounts be deemed third party beneficiaries under this contract.
+
+18.5 The paragraph titles and headings in this Agreement are solely used for the convenience of the parties and have no legal or contractual significance.
+
+18.6 This contract shall be governed by and construed in accordance with the jurisdiction of the Taipei City Court of the Republic of China. without regard to principles of conflicts of law. Any action, suit or proceeding arising out of or related to this contract or the subject matter hereof shall be brought only in the courts located in the county in which NHR has its principal place of business at the time of filing of such action, suit or proceeding, and the Parties hereby unconditionally and irrevocably consent and submit to such exclusive jurisdiction and waive any objection that they may now or hereafter have with respect thereto.
+
+Copyright © 2014 Nietzsche Enterprise Co., Ltd. 
+
+4F., No.560, Sec. 2, Chung Shan Rd., Chung Ho Dist., New Taipei City 235, Taiwan 
+
+http://www.nhr.com.tw 
+http://www.sentrolcloud.com
+ph: +886-2-2223-1118 
+fax: +886-2-2223-5333
+service@nhr.com.tw</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TLe-BR-xoH">
+                                        <rect key="frame" x="8" y="64" width="584" height="1"/>
+                                        <color key="backgroundColor" red="0.62745098040000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Yh8-mi-Z8s"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbI-79-3Nm">
+                                        <rect key="frame" x="10" y="20" width="44" height="44"/>
+                                        <state key="normal" image="topNavi_back_btn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeTermView:" destination="shA-eT-Mgs" eventType="touchUpInside" id="59O-b8-FsT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="TLe-BR-xoH" secondAttribute="trailing" constant="8" id="6Af-u4-yZi"/>
+                                    <constraint firstItem="TLe-BR-xoH" firstAttribute="leading" secondItem="Fvh-a8-XgD" secondAttribute="leading" constant="8" id="GEs-6U-Lrx"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yq7-Bb-uBa" secondAttribute="bottom" constant="27" id="Got-4v-Q7h"/>
+                                    <constraint firstItem="Yq7-Bb-uBa" firstAttribute="top" secondItem="TLe-BR-xoH" secondAttribute="bottom" constant="8" id="UDL-Js-UTO"/>
+                                    <constraint firstAttribute="centerX" secondItem="bhD-uh-OkK" secondAttribute="centerX" constant="-0.5" id="YSu-Vl-sEg"/>
+                                    <constraint firstItem="TLe-BR-xoH" firstAttribute="top" secondItem="bhD-uh-OkK" secondAttribute="bottom" constant="11" id="bfL-ml-B9n"/>
+                                    <constraint firstItem="Yq7-Bb-uBa" firstAttribute="leading" secondItem="Fvh-a8-XgD" secondAttribute="leading" constant="8" id="fcD-dt-1FS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yq7-Bb-uBa" secondAttribute="trailing" constant="8" id="fif-xc-eTk"/>
+                                    <constraint firstItem="bhD-uh-OkK" firstAttribute="top" secondItem="Fvh-a8-XgD" secondAttribute="top" constant="32" id="hgc-b8-jot"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4n-xs-oBg" userLabel="主要View">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First name :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4sE-ny-iEt">
+                                        <rect key="frame" x="4" y="12" width="126" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.37254901959999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25T-Eh-fEW">
+                                        <rect key="frame" x="139" y="8" width="177" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last name :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XmP-jv-q3R">
+                                        <rect key="frame" x="4" y="50" width="126" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.37254901959999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTx-Wf-O9H">
+                                        <rect key="frame" x="139" y="46" width="177" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account Email :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jeq-9y-aqH">
+                                        <rect key="frame" x="4" y="88" width="126" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.37254901959999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tzk-Fp-sSb">
+                                        <rect key="frame" x="139" y="84" width="177" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GrM-mv-WDg">
+                                        <rect key="frame" x="4" y="126" width="126" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.37254901959999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R25-PB-neh">
+                                        <rect key="frame" x="139" y="122" width="177" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Re-type Password :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="v2b-1u-jTe">
+                                        <rect key="frame" x="4" y="164" width="135" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.37254901959999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gateway number :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fAq-WV-Fup">
+                                        <rect key="frame" x="4" y="201" width="126" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.37254901959999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lHl-G3-dsa">
+                                        <rect key="frame" x="139" y="197" width="177" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyF-rP-oAZ">
+                                        <rect key="frame" x="0.0" y="226" width="600" height="162"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="162" id="vsh-8E-5eG"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dataSource" destination="shA-eT-Mgs" id="13R-PM-oxh"/>
+                                            <outlet property="delegate" destination="shA-eT-Mgs" id="vtl-EB-5bg"/>
+                                        </connections>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I agree to the " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3xR-wM-RcM">
+                                        <rect key="frame" x="49" y="386" width="86" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.37254901959999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VC-v1-pXZ">
+                                        <rect key="frame" x="48" y="402" width="114" height="30"/>
+                                        <state key="normal" title="Terms of Service">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openTermView:" destination="shA-eT-Mgs" eventType="touchUpInside" id="c3L-R1-zcT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erv-1Q-Yfi">
+                                        <rect key="frame" x="10" y="392" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.46944754459999999" green="0.46944754459999999" blue="0.46944754459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="checkBox.jpg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lpi-qs-bVW">
+                                        <rect key="frame" x="143" y="160" width="173" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="yyF-rP-oAZ" firstAttribute="top" secondItem="f4n-xs-oBg" secondAttribute="top" constant="226" id="Oo2-dQ-hfa"/>
+                                    <constraint firstAttribute="trailing" secondItem="yyF-rP-oAZ" secondAttribute="trailing" id="V0M-eB-odq"/>
+                                    <constraint firstItem="yyF-rP-oAZ" firstAttribute="leading" secondItem="f4n-xs-oBg" secondAttribute="leading" id="mcY-gq-jCJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fvh-a8-XgD" firstAttribute="leading" secondItem="Unw-VW-Van" secondAttribute="leading" id="1lN-uM-dTV"/>
+                            <constraint firstItem="C1R-40-6Uc" firstAttribute="top" secondItem="Fvh-a8-XgD" secondAttribute="bottom" id="2xs-er-XV1"/>
+                            <constraint firstItem="Fvh-a8-XgD" firstAttribute="top" secondItem="Unw-VW-Van" secondAttribute="top" id="3Wb-jl-BHp"/>
+                            <constraint firstItem="C1R-40-6Uc" firstAttribute="top" secondItem="f4n-xs-oBg" secondAttribute="bottom" id="5fY-Af-2nj"/>
+                            <constraint firstItem="z4r-Bg-3LH" firstAttribute="leading" secondItem="Unw-VW-Van" secondAttribute="leading" constant="10" id="N6c-h3-tJV"/>
+                            <constraint firstAttribute="trailing" secondItem="bbm-MF-xhD" secondAttribute="trailing" id="Ruk-HV-0j4"/>
+                            <constraint firstItem="bbm-MF-xhD" firstAttribute="top" secondItem="Unw-VW-Van" secondAttribute="top" id="Uhl-em-u2Y"/>
+                            <constraint firstAttribute="trailing" secondItem="f4n-xs-oBg" secondAttribute="trailing" id="Wf5-Ci-0gE"/>
+                            <constraint firstAttribute="trailing" secondItem="Fvh-a8-XgD" secondAttribute="trailing" id="XwZ-kR-5uV"/>
+                            <constraint firstItem="f4n-xs-oBg" firstAttribute="top" secondItem="z4r-Bg-3LH" secondAttribute="bottom" id="YVU-de-CFW"/>
+                            <constraint firstItem="z4r-Bg-3LH" firstAttribute="top" secondItem="o2F-u1-aRV" secondAttribute="bottom" id="Zy0-Ap-6Sv"/>
+                            <constraint firstItem="f4n-xs-oBg" firstAttribute="leading" secondItem="Unw-VW-Van" secondAttribute="leading" id="chr-Ig-0JR"/>
+                            <constraint firstItem="bbm-MF-xhD" firstAttribute="leading" secondItem="Unw-VW-Van" secondAttribute="leading" id="pAC-QZ-zc2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="f4n-xs-oBg" id="buY-jU-Yu8"/>
+                        <outlet property="termView" destination="Fvh-a8-XgD" id="Upo-62-6Gf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nql-RC-PeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-769" y="-1427"/>
+        </scene>
         <!--Dashboard View Controller-->
         <scene sceneID="8dk-ac-8kf">
             <objects>
@@ -792,7 +1168,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4J-NC-amn" userLabel="setMenu">
                                 <rect key="frame" x="140" y="64" width="320" height="168"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="metal_start_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="YwG-FI-iqD">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="metal_start_button_in.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Rh-Rg-37x">
+                                        <rect key="frame" x="0.0" y="-160" width="320" height="320"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="metal_start_button_out.png" translatesAutoresizingMaskIntoConstraints="NO" id="YwG-FI-iqD">
                                         <rect key="frame" x="0.0" y="-160" width="320" height="320"/>
                                     </imageView>
                                 </subviews>
@@ -835,6 +1214,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="metalIN" destination="7Rh-Rg-37x" id="MAC-D6-TcR"/>
                         <outlet property="naviHeight" destination="fUC-FI-woe" id="7Nt-qa-tlB"/>
                         <outlet property="setMenuView" destination="K4J-NC-amn" id="dvK-IO-BTj"/>
                         <outlet property="tableView" destination="ehs-pn-ZBL" id="vjC-7y-gjJ"/>
@@ -1179,6 +1559,9 @@
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sectionBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="txL-42-svh">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                                <variation key="widthClass=regular" fixedFrame="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="800" height="44"/>
+                                                </variation>
                                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                                 </variation>
@@ -1321,7 +1704,151 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jhe-ka-yZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2761" y="1512"/>
+            <point key="canvasLocation" x="2760.75" y="1512"/>
+        </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="YNK-q8-hvP">
+            <objects>
+                <viewController restorationIdentifier="ScannerViewController" storyboardIdentifier="ScannerViewController" id="A91-X5-Xgt" customClass="ScannerViewController" customModule="sentrolCloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hIZ-w9-d21"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gru-qT-f4R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mIn-wx-aLX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zp9-5w-poZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <color key="backgroundColor" red="0.34901960780000002" green="0.5450980392" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="XX1-DW-bdb"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.34901960780000002" green="0.5450980392" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Scanner" id="DQp-cT-AnO"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZG4-TW-VOw">
+                                <rect key="frame" x="10" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="faH-Cy-aek"/>
+                                    <constraint firstAttribute="height" constant="44" id="gN7-A4-5rN"/>
+                                </constraints>
+                                <state key="normal" image="topNavi_back_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissSelf:" destination="A91-X5-Xgt" eventType="touchUpInside" id="rg7-md-JHp"/>
+                                    <action selector="dismissSelfViewcontroller:" destination="hff-Nj-HK9" eventType="touchUpInside" id="qie-xK-3tn"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivf-aN-fVr">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cul-yW-o7V" userLabel="scannerTopView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5f-ca-6Z7">
+                                        <rect key="frame" x="182" y="150" width="236" height="236"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scanZone.png" translatesAutoresizingMaskIntoConstraints="NO" id="2fX-I8-oCS">
+                                                <rect key="frame" x="0.0" y="0.0" width="236" height="236"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="236" id="RlI-Le-go8"/>
+                                            <constraint firstAttribute="height" constant="236" id="hEB-Sc-aSa"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cig-7K-lmQ">
+                                        <rect key="frame" x="182" y="410" width="236" height="21"/>
+                                        <color key="backgroundColor" red="0.17254901959999999" green="0.67450980390000004" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="236" id="0Q0-N9-zUe"/>
+                                            <constraint firstAttribute="height" constant="21" id="LyE-RM-ouz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0x-47-bZs">
+                                        <rect key="frame" x="264" y="448" width="73" height="30"/>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.37254901959999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Qoe-p5-pQ9"/>
+                                            <constraint firstAttribute="width" constant="73" id="XEt-Km-ndN"/>
+                                        </constraints>
+                                        <state key="normal" title="Copy">
+                                            <color key="titleColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="copyNumber:" destination="A91-X5-Xgt" eventType="touchUpInside" id="Hpc-S7-YZ3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Cig-7K-lmQ" firstAttribute="top" secondItem="n5f-ca-6Z7" secondAttribute="bottom" constant="24" id="4De-8T-UxB"/>
+                                    <constraint firstAttribute="centerX" secondItem="Cig-7K-lmQ" secondAttribute="centerX" id="BMR-s1-rCZ"/>
+                                    <constraint firstAttribute="centerX" secondItem="n5f-ca-6Z7" secondAttribute="centerX" id="LYM-F8-igw"/>
+                                    <constraint firstAttribute="centerX" secondItem="l0x-47-bZs" secondAttribute="centerX" constant="-0.5" id="MRa-MJ-9Gl"/>
+                                    <constraint firstAttribute="centerY" secondItem="n5f-ca-6Z7" secondAttribute="centerY" id="OWj-ky-J2o"/>
+                                    <constraint firstItem="l0x-47-bZs" firstAttribute="top" secondItem="Cig-7K-lmQ" secondAttribute="bottom" constant="17" id="f79-b4-UZP"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanGreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="g3n-YG-mMj" userLabel="scannerGreen">
+                                <rect key="frame" x="0.0" y="64" width="600" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="vLP-TS-shv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ivf-aN-fVr" firstAttribute="leading" secondItem="mIn-wx-aLX" secondAttribute="leading" id="2MD-If-rWB"/>
+                            <constraint firstItem="g3n-YG-mMj" firstAttribute="top" secondItem="ZG4-TW-VOw" secondAttribute="bottom" id="8Zn-HF-ebw"/>
+                            <constraint firstItem="Gru-qT-f4R" firstAttribute="top" secondItem="Cul-yW-o7V" secondAttribute="bottom" id="ASJ-8X-6ED"/>
+                            <constraint firstItem="Gru-qT-f4R" firstAttribute="top" secondItem="ivf-aN-fVr" secondAttribute="bottom" id="FFl-jd-0vN"/>
+                            <constraint firstItem="zp9-5w-poZ" firstAttribute="top" secondItem="mIn-wx-aLX" secondAttribute="top" id="JmR-dm-Apv"/>
+                            <constraint firstAttribute="trailing" secondItem="Cul-yW-o7V" secondAttribute="trailing" id="RCm-RD-hm1"/>
+                            <constraint firstItem="ZG4-TW-VOw" firstAttribute="top" secondItem="hIZ-w9-d21" secondAttribute="bottom" id="Y0m-vc-h7e"/>
+                            <constraint firstAttribute="trailing" secondItem="zp9-5w-poZ" secondAttribute="trailing" id="b3P-pZ-uPt"/>
+                            <constraint firstItem="zp9-5w-poZ" firstAttribute="leading" secondItem="mIn-wx-aLX" secondAttribute="leading" id="bfk-Ea-wnO"/>
+                            <constraint firstItem="Cul-yW-o7V" firstAttribute="leading" secondItem="mIn-wx-aLX" secondAttribute="leading" id="kh9-OH-Cb2"/>
+                            <constraint firstAttribute="trailing" secondItem="ivf-aN-fVr" secondAttribute="trailing" id="nOh-2x-drS"/>
+                            <constraint firstItem="ivf-aN-fVr" firstAttribute="top" secondItem="ZG4-TW-VOw" secondAttribute="bottom" id="niS-GB-Qg3"/>
+                            <constraint firstItem="g3n-YG-mMj" firstAttribute="leading" secondItem="mIn-wx-aLX" secondAttribute="leading" id="rLC-n6-GkA"/>
+                            <constraint firstAttribute="trailing" secondItem="g3n-YG-mMj" secondAttribute="trailing" id="tzK-b0-37B"/>
+                            <constraint firstItem="Cul-yW-o7V" firstAttribute="top" secondItem="ZG4-TW-VOw" secondAttribute="bottom" id="yXY-bc-gWi"/>
+                            <constraint firstItem="ZG4-TW-VOw" firstAttribute="leading" secondItem="mIn-wx-aLX" secondAttribute="leading" constant="10" id="yuD-OU-ASu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="copyNumberBtn" destination="l0x-47-bZs" id="ciq-mP-blR"/>
+                        <outlet property="greenTopSpace" destination="8Zn-HF-ebw" id="Hrl-en-A84"/>
+                        <outlet property="numberLable" destination="Cig-7K-lmQ" id="auS-8R-0SA"/>
+                        <outlet property="scannerGreen" destination="g3n-YG-mMj" id="fqz-qc-aIV"/>
+                        <outlet property="scannerView" destination="ivf-aN-fVr" id="zX0-gF-zsA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6w-ar-JdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3404" y="1512"/>
         </scene>
         <!--Message View Controller-->
         <scene sceneID="GlN-Gl-BIX">
@@ -1362,34 +1889,30 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="iX8-aP-2aF">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7MG-sc-Uzy">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="tGP-2H-w6F" id="rWE-DW-fBe"/>
-                                    <outlet property="delegate" destination="tGP-2H-w6F" id="biT-wl-WUM"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iX8-aP-2aF" firstAttribute="leading" secondItem="8Xs-w6-YBj" secondAttribute="leading" id="PUi-qP-Pta"/>
-                            <constraint firstItem="iX8-aP-2aF" firstAttribute="top" secondItem="Es2-gr-DkF" secondAttribute="bottom" id="V9a-Lo-Ctx"/>
-                            <constraint firstItem="8bP-PV-11T" firstAttribute="top" secondItem="iX8-aP-2aF" secondAttribute="bottom" id="W8f-oR-3gF"/>
-                            <constraint firstAttribute="trailing" secondItem="iX8-aP-2aF" secondAttribute="trailing" id="X1q-c1-gbD"/>
+                            <constraint firstItem="8bP-PV-11T" firstAttribute="top" secondItem="7MG-sc-Uzy" secondAttribute="bottom" id="K3L-Qn-cFQ"/>
+                            <constraint firstAttribute="trailing" secondItem="7MG-sc-Uzy" secondAttribute="trailing" id="U5z-m9-NhJ"/>
                             <constraint firstItem="Es2-gr-DkF" firstAttribute="top" secondItem="8Xs-w6-YBj" secondAttribute="top" id="coy-Ob-56M"/>
+                            <constraint firstItem="7MG-sc-Uzy" firstAttribute="leading" secondItem="8Xs-w6-YBj" secondAttribute="leading" id="hpg-XR-KgS"/>
                             <constraint firstItem="Es2-gr-DkF" firstAttribute="leading" secondItem="8Xs-w6-YBj" secondAttribute="leading" id="kc3-a7-67t"/>
+                            <constraint firstItem="7MG-sc-Uzy" firstAttribute="top" secondItem="Es2-gr-DkF" secondAttribute="bottom" id="kcr-4b-Pvy"/>
                             <constraint firstAttribute="trailing" secondItem="Es2-gr-DkF" secondAttribute="trailing" id="omC-9M-9Mu"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="dismissBtn" destination="YAl-bR-Kdr" id="5pU-Qi-Vtz"/>
-                        <outlet property="mainTableView" destination="iX8-aP-2aF" id="1fF-w7-sle"/>
+                        <outlet property="mainTableView" destination="7MG-sc-Uzy" id="cs8-GU-2MW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t5R-D3-vFA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3374" y="1512"/>
+            <point key="canvasLocation" x="4238" y="1532"/>
         </scene>
         <!--Logout View Controller-->
         <scene sceneID="jHs-g5-Mhm">
@@ -1414,22 +1937,18 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Log Out" id="Xs1-14-BAz">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="9fs-T9-LZj">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AIQ-1N-nDU">
-                                                <rect key="frame" x="0.0" y="20" width="44" height="44"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="topNavi_back_btn.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="dismissSelfViewcontroller:" destination="9S3-Su-vFc" eventType="touchUpInside" id="Czh-mg-fc2"/>
-                                                </connections>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Log Out" id="Xs1-14-BAz"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXo-nl-MSh">
+                                <rect key="frame" x="10" y="20" width="44" height="44"/>
+                                <state key="normal" image="topNavi_back_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissSelfViewcontroller:" destination="9S3-Su-vFc" eventType="touchUpInside" id="lVm-lF-VZd"/>
+                                </connections>
+                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GvG-Wb-4db">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
@@ -1448,9 +1967,14 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="37" id="Mwa-ST-8WI"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Confirm" backgroundImage="cancelBG.png">
+                                            <color key="titleColor" red="0.35686274509999999" green="0.37254901959999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="confirmLogOUT:" destination="9S3-Su-vFc" eventType="touchUpInside" id="3AD-lZ-vcy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeL-dq-dqZ">
                                         <rect key="frame" x="13" y="95" width="574" height="37"/>
@@ -1458,9 +1982,14 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="37" id="ZGJ-MK-9YL"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Cancel" backgroundImage="cancelBG.png">
+                                            <color key="titleColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="dismissSelfViewcontroller:" destination="9S3-Su-vFc" eventType="touchUpInside" id="RS2-3g-Vfe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8i-0h-Vth">
                                         <rect key="frame" x="13" y="140" width="574" height="37"/>
@@ -1468,7 +1997,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="37" id="i4A-nM-Um8"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Choose another account" backgroundImage="greenBg.png">
+                                            <color key="titleColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -1500,13 +2031,10 @@
                             <constraint firstAttribute="trailing" secondItem="2td-73-PCh" secondAttribute="trailing" id="uP2-86-ygr"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="dismissBtn" destination="AIQ-1N-nDU" id="Ed2-M8-aJC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H38-Aa-TgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3989" y="1512"/>
+            <point key="canvasLocation" x="4853" y="1532"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="0hs-Pg-NNd">
@@ -1591,6 +2119,9 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openRegistr:" destination="E8s-yM-udo" eventType="touchUpInside" id="NYo-l2-WZb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1623,7 +2154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bB4-Yb-bTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-868" y="-805"/>
+            <point key="canvasLocation" x="-1524" y="-809"/>
         </scene>
     </scenes>
     <resources>
@@ -1632,9 +2163,11 @@
         <image name="b-n-3.jpg" width="363" height="200"/>
         <image name="b-n-4.jpg" width="363" height="200"/>
         <image name="cancelBG.png" width="1" height="99"/>
+        <image name="checkBox.jpg" width="30" height="30"/>
         <image name="dashMenu1.png" width="44" height="44"/>
         <image name="greenBg.png" width="1" height="99"/>
-        <image name="metal_start_button.png" width="320" height="320"/>
+        <image name="metal_start_button_in.png" width="240" height="240"/>
+        <image name="metal_start_button_out.png" width="240" height="240"/>
         <image name="modle-away.png" width="44" height="44"/>
         <image name="modle-home.png" width="44" height="44"/>
         <image name="modle-night.png" width="44" height="44"/>
@@ -1643,6 +2176,8 @@
         <image name="r-n-3.jpg" width="74" height="67"/>
         <image name="r-n-4.jpg" width="74" height="67"/>
         <image name="rightArror.png" width="44" height="44"/>
+        <image name="scanGreen.png" width="600" height="44"/>
+        <image name="scanZone.png" width="236" height="236"/>
         <image name="sectionBg.png" width="1" height="44"/>
         <image name="settingBg.jpg" width="638" height="959"/>
         <image name="settintTypeIcon1.png" width="44" height="44"/>

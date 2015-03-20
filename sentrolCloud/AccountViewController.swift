@@ -9,7 +9,6 @@
 import UIKit
 
 
-
 protocol  AccountViewControllerProtocol{
     func showGeneralVC()
     func showNotifiVC()
@@ -17,6 +16,8 @@ protocol  AccountViewControllerProtocol{
     func showFeedVC()
     func showMessageVC()
     func showLogoutVC()
+    func showScannerVC()//拗苗
+    func CheckHadLogined()
 }
 
 
@@ -132,6 +133,8 @@ class AccountViewController: UIViewController {
             self.delegate?.showFeedVC()
         case 5 :
             self.delegate?.showMessageVC()
+        case 6 ://掃描
+            self.delegate?.showScannerVC()
         case 8 :
             self.delegate?.showLogoutVC()
             
@@ -144,6 +147,7 @@ class AccountViewController: UIViewController {
     }
     
     
+   
     
     
     

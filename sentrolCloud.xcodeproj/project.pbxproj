@@ -81,6 +81,13 @@
 		9A5A50C21AAD8C7B00A3CD74 /* modle-night@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A5A50B91AAD8C7B00A3CD74 /* modle-night@3x.png */; };
 		9A5A50C41AAD8DBA00A3CD74 /* settingBg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A5A50C31AAD8DBA00A3CD74 /* settingBg.jpg */; };
 		9A5BBB2C1AB11F8200C85A4D /* SelectCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5BBB2B1AB11F8200C85A4D /* SelectCategoryController.swift */; };
+		9A70B7F51AB9561B0056A1F0 /* RegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A70B7F41AB9561B0056A1F0 /* RegistViewController.swift */; };
+		9A71051D1ABAC638001B081C /* metal_start_button_in.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A7105171ABAC638001B081C /* metal_start_button_in.png */; };
+		9A71051E1ABAC638001B081C /* metal_start_button_in@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A7105181ABAC638001B081C /* metal_start_button_in@2x.png */; };
+		9A71051F1ABAC638001B081C /* metal_start_button_in@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A7105191ABAC638001B081C /* metal_start_button_in@3x.png */; };
+		9A7105201ABAC638001B081C /* metal_start_button_out.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A71051A1ABAC638001B081C /* metal_start_button_out.png */; };
+		9A7105211ABAC638001B081C /* metal_start_button_out@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A71051B1ABAC638001B081C /* metal_start_button_out@2x.png */; };
+		9A7105221ABAC638001B081C /* metal_start_button_out@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A71051C1ABAC638001B081C /* metal_start_button_out@3x.png */; };
 		9AC1DB721AAD95D100F89452 /* SettimgSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1DB711AAD95D100F89452 /* SettimgSectionTableViewCell.swift */; };
 		9AC1DB741AAD95DC00F89452 /* SettimgSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1DB731AAD95DC00F89452 /* SettimgSectionTableViewCell.xib */; };
 		9AC1DB781AAD9D0B00F89452 /* SettimgTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1DB761AAD9D0B00F89452 /* SettimgTableViewCell.swift */; };
@@ -97,6 +104,12 @@
 		9AC1DB911AADA7C200F89452 /* settintTypeIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1DB8B1AADA7C200F89452 /* settintTypeIcon2.png */; };
 		9AC1DB921AADA7C200F89452 /* settintTypeIcon2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1DB8C1AADA7C200F89452 /* settintTypeIcon2@2x.png */; };
 		9AC1DB931AADA7C200F89452 /* settintTypeIcon2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1DB8D1AADA7C200F89452 /* settintTypeIcon2@3x.png */; };
+		9ACB262A1ABBB20400EC60AC /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB26291ABBB20400EC60AC /* ScannerViewController.swift */; };
+		9ACB262F1ABBB69000EC60AC /* scanZone.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACB262C1ABBB69000EC60AC /* scanZone.png */; };
+		9ACB26301ABBB69000EC60AC /* scanZone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACB262D1ABBB69000EC60AC /* scanZone@2x.png */; };
+		9ACB26311ABBB69000EC60AC /* scanZone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACB262E1ABBB69000EC60AC /* scanZone@3x.png */; };
+		9ACB26331ABBB94A00EC60AC /* scanGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACB26321ABBB94A00EC60AC /* scanGreen.png */; };
+		9ACB26351ABBD0F000EC60AC /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACB26341ABBD0F000EC60AC /* HomeKit.framework */; };
 		9AE15D071AA95C4D00627DE3 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE15CF51AA95C4D00627DE3 /* AFHTTPRequestOperation.m */; };
 		9AE15D081AA95C4D00627DE3 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE15CF71AA95C4D00627DE3 /* AFHTTPRequestOperationManager.m */; };
 		9AE15D091AA95C4D00627DE3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE15CF91AA95C4D00627DE3 /* AFHTTPSessionManager.m */; };
@@ -317,6 +330,13 @@
 		9A5A50B91AAD8C7B00A3CD74 /* modle-night@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "modle-night@3x.png"; sourceTree = "<group>"; };
 		9A5A50C31AAD8DBA00A3CD74 /* settingBg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = settingBg.jpg; sourceTree = "<group>"; };
 		9A5BBB2B1AB11F8200C85A4D /* SelectCategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryController.swift; sourceTree = "<group>"; };
+		9A70B7F41AB9561B0056A1F0 /* RegistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistViewController.swift; sourceTree = "<group>"; };
+		9A7105171ABAC638001B081C /* metal_start_button_in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metal_start_button_in.png; sourceTree = "<group>"; };
+		9A7105181ABAC638001B081C /* metal_start_button_in@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metal_start_button_in@2x.png"; sourceTree = "<group>"; };
+		9A7105191ABAC638001B081C /* metal_start_button_in@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metal_start_button_in@3x.png"; sourceTree = "<group>"; };
+		9A71051A1ABAC638001B081C /* metal_start_button_out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metal_start_button_out.png; sourceTree = "<group>"; };
+		9A71051B1ABAC638001B081C /* metal_start_button_out@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metal_start_button_out@2x.png"; sourceTree = "<group>"; };
+		9A71051C1ABAC638001B081C /* metal_start_button_out@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metal_start_button_out@3x.png"; sourceTree = "<group>"; };
 		9AC1DB711AAD95D100F89452 /* SettimgSectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettimgSectionTableViewCell.swift; sourceTree = "<group>"; };
 		9AC1DB731AAD95DC00F89452 /* SettimgSectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettimgSectionTableViewCell.xib; sourceTree = "<group>"; };
 		9AC1DB761AAD9D0B00F89452 /* SettimgTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettimgTableViewCell.swift; sourceTree = "<group>"; };
@@ -333,6 +353,13 @@
 		9AC1DB8B1AADA7C200F89452 /* settintTypeIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settintTypeIcon2.png; sourceTree = "<group>"; };
 		9AC1DB8C1AADA7C200F89452 /* settintTypeIcon2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settintTypeIcon2@2x.png"; sourceTree = "<group>"; };
 		9AC1DB8D1AADA7C200F89452 /* settintTypeIcon2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settintTypeIcon2@3x.png"; sourceTree = "<group>"; };
+		9ACB26291ABBB20400EC60AC /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		9ACB262C1ABBB69000EC60AC /* scanZone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanZone.png; sourceTree = "<group>"; };
+		9ACB262D1ABBB69000EC60AC /* scanZone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanZone@2x.png"; sourceTree = "<group>"; };
+		9ACB262E1ABBB69000EC60AC /* scanZone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanZone@3x.png"; sourceTree = "<group>"; };
+		9ACB26321ABBB94A00EC60AC /* scanGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanGreen.png; sourceTree = "<group>"; };
+		9ACB26341ABBD0F000EC60AC /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		9ACB26361ABBD0F000EC60AC /* sentrolCloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = sentrolCloud.entitlements; sourceTree = "<group>"; };
 		9AE15CF31AA95C4C00627DE3 /* sentrolCloud-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sentrolCloud-Bridging-Header.h"; sourceTree = "<group>"; };
 		9AE15CF41AA95C4D00627DE3 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		9AE15CF51AA95C4D00627DE3 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
@@ -483,6 +510,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACB26351ABBD0F000EC60AC /* HomeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +675,7 @@
 		9A5A50951AAD4DF300A3CD74 /* 會員主頁 */ = {
 			isa = PBXGroup;
 			children = (
+				9ACB262B1ABBB66100EC60AC /* scanner */,
 				9A5A50A71AAD768C00A3CD74 /* term */,
 				9A5A50961AAD4E0300A3CD74 /* general */,
 				9A5A50991AAD578D00A3CD74 /* Notifi */,
@@ -738,6 +767,27 @@
 			name = "選擇類別SelectCategory";
 			sourceTree = "<group>";
 		};
+		9A70B7F31AB955F50056A1F0 /* 註冊 */ = {
+			isa = PBXGroup;
+			children = (
+				9A70B7F41AB9561B0056A1F0 /* RegistViewController.swift */,
+			);
+			name = "註冊";
+			sourceTree = "<group>";
+		};
+		9A7105161ABAC61E001B081C /* 齒輪 */ = {
+			isa = PBXGroup;
+			children = (
+				9A7105171ABAC638001B081C /* metal_start_button_in.png */,
+				9A7105181ABAC638001B081C /* metal_start_button_in@2x.png */,
+				9A7105191ABAC638001B081C /* metal_start_button_in@3x.png */,
+				9A71051A1ABAC638001B081C /* metal_start_button_out.png */,
+				9A71051B1ABAC638001B081C /* metal_start_button_out@2x.png */,
+				9A71051C1ABAC638001B081C /* metal_start_button_out@3x.png */,
+			);
+			name = "齒輪";
+			sourceTree = "<group>";
+		};
 		9AC1DB701AAD957E00F89452 /* scetion cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -780,6 +830,25 @@
 				9AC1DB8D1AADA7C200F89452 /* settintTypeIcon2@3x.png */,
 			);
 			name = "左上按鈕";
+			sourceTree = "<group>";
+		};
+		9ACB26281ABBB14E00EC60AC /* 5.Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				9ACB26291ABBB20400EC60AC /* ScannerViewController.swift */,
+			);
+			name = 5.Scanner;
+			sourceTree = "<group>";
+		};
+		9ACB262B1ABBB66100EC60AC /* scanner */ = {
+			isa = PBXGroup;
+			children = (
+				9ACB26321ABBB94A00EC60AC /* scanGreen.png */,
+				9ACB262C1ABBB69000EC60AC /* scanZone.png */,
+				9ACB262D1ABBB69000EC60AC /* scanZone@2x.png */,
+				9ACB262E1ABBB69000EC60AC /* scanZone@3x.png */,
+			);
+			name = scanner;
 			sourceTree = "<group>";
 		};
 		9AE15CD51AA95BE600627DE3 /* 第三方套件 */ = {
@@ -959,6 +1028,7 @@
 				E5B14A9B1AA5B3200078F6C7 /* 2.Notification */,
 				E5B14AA31AA68AF30078F6C7 /* 3.Terms */,
 				E5B14AA61AA6AF950078F6C7 /* 4.Feedback */,
+				9ACB26281ABBB14E00EC60AC /* 5.Scanner */,
 				E5B14AA91AA6B9560078F6C7 /* 6.Message */,
 				E5B14AAC1AA6BBC40078F6C7 /* 9.Logout */,
 			);
@@ -1003,6 +1073,7 @@
 		E595745F1AA4507200021E8D = {
 			isa = PBXGroup;
 			children = (
+				9ACB26341ABBD0F000EC60AC /* HomeKit.framework */,
 				E595746A1AA4507200021E8D /* sentrolCloud */,
 				E59574831AA4507200021E8D /* sentrolCloudTests */,
 				E59574691AA4507200021E8D /* Products */,
@@ -1021,6 +1092,7 @@
 		E595746A1AA4507200021E8D /* sentrolCloud */ = {
 			isa = PBXGroup;
 			children = (
+				9ACB26361ABBD0F000EC60AC /* sentrolCloud.entitlements */,
 				E595746D1AA4507200021E8D /* AppDelegate.swift */,
 				E55CF09A1AA569700014B093 /* 大容器 */,
 				E595749F1AA54D1F00021E8D /* 主頁 */,
@@ -1069,6 +1141,7 @@
 		E59574921AA452B600021E8D /* 登入相關 */ = {
 			isa = PBXGroup;
 			children = (
+				9A70B7F31AB955F50056A1F0 /* 註冊 */,
 				E59574901AA4516200021E8D /* LoginViewController.swift */,
 			);
 			name = "登入相關";
@@ -1246,6 +1319,7 @@
 		E5B14ABB1AA7EB8B0078F6C7 /* DashBoard相關 */ = {
 			isa = PBXGroup;
 			children = (
+				9A7105161ABAC61E001B081C /* 齒輪 */,
 				9A3194861AB29B0300A774EC /* metal_start_button.png */,
 				9A3194871AB29B0300A774EC /* metal_start_button@2x.png */,
 				9A3194881AB29B0300A774EC /* metal_start_button@3x.png */,
@@ -1417,6 +1491,11 @@
 					E59574671AA4507200021E8D = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = 6U79KUH842;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
 					};
 					E595747F1AA4507200021E8D = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -1460,6 +1539,7 @@
 				E548FA601AA84FB500C20111 /* Bed_Room@2x.png in Resources */,
 				9A4836191AB26E8E00736FB6 /* AFNetworking.strings in Resources */,
 				9AC1DB841AADA13700F89452 /* modleSelect-yes.png in Resources */,
+				9ACB26331ABBB94A00EC60AC /* scanGreen.png in Resources */,
 				E5FEACC01AA7FA0C00A781EB /* r-n-3@2x.jpg in Resources */,
 				9A4C5EA11AAFF1E00074A49C /* ZoneEditDeleteTableViewCell.xib in Resources */,
 				E5FEACC11AA7FA0C00A781EB /* r-n-3@3x.jpg in Resources */,
@@ -1469,8 +1549,10 @@
 				9A5A50BD1AAD8C7B00A3CD74 /* modle-home.png in Resources */,
 				E55CF0A41AA58DEA0014B093 /* GeneralTableViewCell.xib in Resources */,
 				E5B14AC21AA7EBEA0078F6C7 /* dashBoard@2X.jpg in Resources */,
+				9ACB26301ABBB69000EC60AC /* scanZone@2x.png in Resources */,
 				9AE910C01AAEF06500AEA982 /* saveIcon.png in Resources */,
 				9A5A50BA1AAD8C7B00A3CD74 /* modle-away.png in Resources */,
+				9A71051F1ABAC638001B081C /* metal_start_button_in@3x.png in Resources */,
 				9A48361E1AB26E8E00736FB6 /* InfoPlist.strings in Resources */,
 				E527ECE61AA8482A00F0D092 /* Bed_Room.png in Resources */,
 				E5FEACA91AA7F9EA00A781EB /* r-n-4-click.jpg in Resources */,
@@ -1486,6 +1568,7 @@
 				9AE910B41AAEEC2E00AEA982 /* zone_edit_icon_moveTop@2x.png in Resources */,
 				E5FEACA71AA7F9EA00A781EB /* r-n-3-click@2x.jpg in Resources */,
 				E5464D081AA85F5A004DD463 /* icon_Lamp@2x.png in Resources */,
+				9ACB26311ABBB69000EC60AC /* scanZone@3x.png in Resources */,
 				9A5A50C01AAD8C7B00A3CD74 /* modle-night.png in Resources */,
 				E59574761AA4507200021E8D /* Main.storyboard in Resources */,
 				9AC1DB8E1AADA7C200F89452 /* settintTypeIcon1.png in Resources */,
@@ -1557,6 +1640,7 @@
 				E5B14AE61AA7F0F40078F6C7 /* b-n-2-click.jpg in Resources */,
 				9A3194A51AB2CEAC00A774EC /* icon_Smoke.png in Resources */,
 				E5464D041AA85F5A004DD463 /* icon_Humidity.png in Resources */,
+				9A7105201ABAC638001B081C /* metal_start_button_out.png in Resources */,
 				9A3194A41AB2CEAC00A774EC /* icon_Siren.png in Resources */,
 				9A31948D1AB2B46D00A774EC /* EventList.json in Resources */,
 				9AC1DB8F1AADA7C200F89452 /* settintTypeIcon1@2x.png in Resources */,
@@ -1568,6 +1652,8 @@
 				E5B14AED1AA7F0F40078F6C7 /* b-n-4-click@2x.jpg in Resources */,
 				E5FEACA61AA7F9EA00A781EB /* r-n-3-click.jpg in Resources */,
 				9A3194831AB2967A00A774EC /* dashBoardStatus_yes.png in Resources */,
+				9A7105221ABAC638001B081C /* metal_start_button_out@3x.png in Resources */,
+				9A7105211ABAC638001B081C /* metal_start_button_out@2x.png in Resources */,
 				E5FEACA81AA7F9EA00A781EB /* r-n-3-click@3x.jpg in Resources */,
 				E5B14A9F1AA5B5880078F6C7 /* NotificationView.xib in Resources */,
 				E5FEACBC1AA7FA0C00A781EB /* r-n-2.jpg in Resources */,
@@ -1575,6 +1661,7 @@
 				9A5A50BF1AAD8C7B00A3CD74 /* modle-home@3x.png in Resources */,
 				E527ECC61AA8039600F0D092 /* DashBoardList.json in Resources */,
 				9AE910B11AAEEC2E00AEA982 /* zone_edit_icon_moveDown@2x.png in Resources */,
+				9A71051D1ABAC638001B081C /* metal_start_button_in.png in Resources */,
 				9A3194921AB2B6FF00A774EC /* EventTableViewCell.xib in Resources */,
 				9AE910C91AAEF1F500AEA982 /* cameraIcon@3x.png in Resources */,
 				9A5A50A31AAD597D00A3CD74 /* checkBox-c@2x.jpg in Resources */,
@@ -1605,10 +1692,12 @@
 				E548FA611AA84FB500C20111 /* Living_Room@2x.png in Resources */,
 				9A4836361AB285B700736FB6 /* comeraView.jpg in Resources */,
 				E5464D091AA85F5A004DD463 /* icon_Lamp@3x.png in Resources */,
+				9ACB262F1ABBB69000EC60AC /* scanZone.png in Resources */,
 				9AE910B01AAEEC2E00AEA982 /* zone_edit_icon_moveDown.png in Resources */,
 				E5B14ACE1AA7ED830078F6C7 /* b-n-2.jpg in Resources */,
 				9A3194A31AB2CEAC00A774EC /* icon_Motion2.png in Resources */,
 				E548FA5D1AA84BAD00C20111 /* DashSectionTableViewCell.xib in Resources */,
+				9A71051E1ABAC638001B081C /* metal_start_button_in@2x.png in Resources */,
 				E527ECD71AA8380F00F0D092 /* dashMenu1@2x.png in Resources */,
 				9A5A50C11AAD8C7B00A3CD74 /* modle-night@2x.png in Resources */,
 				E5B14AD21AA7ED830078F6C7 /* b-n-4.jpg in Resources */,
@@ -1656,6 +1745,7 @@
 				E55CF0A21AA58DDE0014B093 /* GeneralTableViewCell.swift in Sources */,
 				E595749E1AA4557000021E8D /* AccountViewController.swift in Sources */,
 				E5B14AA51AA68B080078F6C7 /* TermsViewController.swift in Sources */,
+				9ACB262A1ABBB20400EC60AC /* ScannerViewController.swift in Sources */,
 				9AE15D0B1AA95C4D00627DE3 /* AFSecurityPolicy.m in Sources */,
 				9AE9109B1AAEE26C00AEA982 /* ZoneSectionTableViewCell.swift in Sources */,
 				9AE15D071AA95C4D00627DE3 /* AFHTTPRequestOperation.m in Sources */,
@@ -1669,6 +1759,7 @@
 				9AE15D091AA95C4D00627DE3 /* AFHTTPSessionManager.m in Sources */,
 				E5B14AA81AA6AFA70078F6C7 /* FeedbackViewController.swift in Sources */,
 				9A4836391AB286D200736FB6 /* DashCamersTableViewCell.swift in Sources */,
+				9A70B7F51AB9561B0056A1F0 /* RegistViewController.swift in Sources */,
 				9AC1DB781AAD9D0B00F89452 /* SettimgTableViewCell.swift in Sources */,
 				9AE910A01AAEE6D900AEA982 /* ZoneTableViewCell.swift in Sources */,
 				9A4C5E9F1AAFF1D70074A49C /* ZoneEditDeleteTableViewCell.swift in Sources */,
@@ -1863,13 +1954,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kuei Ming Kan (B3M98WKA72)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kuei Ming Kan (B3M98WKA72)";
+				CODE_SIGN_ENTITLEMENTS = sentrolCloud/sentrolCloud.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = sentrolCloud/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c57375ae-7485-4006-912f-37028afff186";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "sentrolCloud/sentrolCloud-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -1881,13 +1973,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kuei Ming Kan (B3M98WKA72)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kuei Ming Kan (B3M98WKA72)";
+				CODE_SIGN_ENTITLEMENTS = sentrolCloud/sentrolCloud.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = sentrolCloud/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c57375ae-7485-4006-912f-37028afff186";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "sentrolCloud/sentrolCloud-Bridging-Header.h";
 			};
 			name = Release;

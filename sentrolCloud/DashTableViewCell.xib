@@ -78,7 +78,7 @@
                             <constraint firstAttribute="width" constant="83" id="hG5-I5-aEI"/>
                         </constraints>
                     </view>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QEz-O7-toE" userLabel="濕度View">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEz-O7-toE" userLabel="濕度View">
                         <rect key="frame" x="220" y="6" width="92" height="61"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgp-Sa-xAJ">
@@ -95,16 +95,22 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="61" id="HyN-Ii-JRM"/>
+                            <constraint firstAttribute="width" constant="92" id="odM-sz-1rQ"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="5ID-ZO-zML" firstAttribute="top" secondItem="saB-JM-qqi" secondAttribute="topMargin" constant="-3" id="DRA-0o-OcS"/>
+                    <constraint firstItem="QEz-O7-toE" firstAttribute="top" secondItem="saB-JM-qqi" secondAttribute="top" constant="6" id="FTT-81-a5p"/>
                     <constraint firstItem="un0-aw-KjL" firstAttribute="top" secondItem="saB-JM-qqi" secondAttribute="top" constant="11" id="K55-D8-PDt"/>
                     <constraint firstItem="sGl-sY-pqf" firstAttribute="top" secondItem="saB-JM-qqi" secondAttribute="top" constant="14" id="Kii-bi-G25"/>
                     <constraint firstItem="un0-aw-KjL" firstAttribute="leading" secondItem="saB-JM-qqi" secondAttribute="leading" constant="8" id="V0W-z9-bZf"/>
                     <constraint firstItem="24f-5y-PlN" firstAttribute="leading" secondItem="un0-aw-KjL" secondAttribute="trailing" constant="8" id="mZq-0l-ucx"/>
                     <constraint firstItem="24f-5y-PlN" firstAttribute="top" secondItem="saB-JM-qqi" secondAttribute="top" constant="11" id="okk-e9-QmH"/>
                     <constraint firstItem="5ID-ZO-zML" firstAttribute="trailing" secondItem="saB-JM-qqi" secondAttribute="trailingMargin" id="rQl-5L-JWp"/>
+                    <constraint firstAttribute="trailing" secondItem="QEz-O7-toE" secondAttribute="trailing" constant="8" id="vlv-Kr-1fD"/>
                     <constraint firstAttribute="trailing" secondItem="sGl-sY-pqf" secondAttribute="trailing" constant="8" id="y3g-p5-txR"/>
                 </constraints>
             </tableViewCellContentView>

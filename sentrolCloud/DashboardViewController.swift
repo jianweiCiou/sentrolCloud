@@ -29,7 +29,13 @@ class DashboardViewController: UIViewController {
     
     //狀態副選單
     @IBOutlet var setMenuView: UIView!
+    @IBOutlet var metalIN: UIImageView!
+    
+    
+    
     @IBOutlet var setMenuBottom: NSLayoutConstraint!
+    
+    
     
     @IBOutlet weak var setMenuViewBG: UIView!
     
@@ -37,7 +43,8 @@ class DashboardViewController: UIViewController {
     var tableData = [AnyObject]()
     var resultsArray: NSArray!
     
-    
+    //狀態字串
+    var statusString :String = "HOME"
     
     //漸層光澤
     let gradientLayer = CAGradientLayer()
@@ -45,6 +52,18 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        var leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        var rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        
+        leftSwipe.direction = .Left
+        rightSwipe.direction = .Right
+        
+        view.addGestureRecognizer(leftSwipe)
+        view.addGestureRecognizer(rightSwipe)
+        
+        
+        
         // Do any additional setup after loading the view.
         
         //副選單創造
@@ -78,6 +97,51 @@ class DashboardViewController: UIViewController {
                // self.tableData.append(item)
             }
         }
+    }
+    
+    func handleSwipes(sender:UISwipeGestureRecognizer) {
+        
+        //有開啟才有手
+        if !setMenuStaus{
+            if (sender.direction == .Left) {
+                
+                if(statusString == "HOME"){
+                    statusString = "NIGHT"
+                    UIView.animateWithDuration(0.5, animations: {
+                        self.metalIN.transform = CGAffineTransformMakeRotation((56.0 * CGFloat(M_PI)) / 180.0)
+                    })
+                }
+                
+                if(statusString == "AWAY"){
+                    statusString = "HOME"
+                    UIView.animateWithDuration(0.5, animations: {
+                        self.metalIN.transform = CGAffineTransformMakeRotation((0 * CGFloat(M_PI)) / 180.0)
+                    })
+                }
+                
+            }
+            
+            if (sender.direction == .Right) {
+                
+                if(statusString == "NIGHT"){
+                    statusString = "HOME"
+                    UIView.animateWithDuration(0.5, animations: {
+                        self.metalIN.transform = CGAffineTransformMakeRotation((0 * CGFloat(M_PI)) / 180.0)
+                    })
+                }
+                
+                if(statusString == "HOME"){
+                    statusString = "AWAY"
+                    UIView.animateWithDuration(0.5, animations: {
+                        self.metalIN.transform = CGAffineTransformMakeRotation((-56.0 * CGFloat(M_PI)) / 180.0)
+                    })
+                }
+            }
+        
+        
+        }
+        
+        
     }
     
     
@@ -259,13 +323,18 @@ class DashboardViewController: UIViewController {
             UIView.animateWithDuration(0.3, animations: { () -> Void in
                 
                 self.setMenuView.alpha = 1
+                self.tableView.alpha = 0.2
+                self.tableView.scrollEnabled = false
             })
         }else{
             UIView.animateWithDuration(0.3, animations: { () -> Void in
                 self.setMenuView.alpha = 0
+                self.tableView.alpha = 1
+                self.tableView.scrollEnabled = true
             })
         
         }
+        
         
         setMenuStaus = !setMenuStaus
     }
